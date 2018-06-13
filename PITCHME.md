@@ -151,7 +151,7 @@ Note:
 @title[Host Configuration Requirements - Linux ]
 <p align="right"><span class="gold" >Host Configuration Requirements </span></p>
 <br>
-fa[linux gp-bullet-white]<span style="font-size:01.1em" >&nbsp;&nbsp;Linux</span>
+@fa[linux gp-bullet-white]<span style="font-size:01.1em" >&nbsp;&nbsp;Linux</span>
 <br>
 <br>
 <br>
