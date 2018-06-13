@@ -415,9 +415,9 @@ Note:
 <br>
 <ul style="list-style-type:none">
  <li>@fa[bullseye gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Configure target to use COM port via PCD</span> </li>
- <li>@fa[star gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modules/features</span> </li>
+ <li>@fa[bullseye gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modules/features</span> </li>
  <li>@fa[bullseye gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;COM 1 is the default on target</span> </li>
- <li>@fa[star gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Simple “ASCII Print” though COM port is allowed</span> </li>
+ <li>@fa[bullseye gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Simple “ASCII Print” though COM port is allowed</span> </li>
  <li>@fa[bullseye gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Non-NULL DebugAgent library instance must be used</span> </li>
 </ul>
 
@@ -1106,3 +1106,186 @@ Copyright (c) 2018, Intel Corporation. All rights reserved.
 **/
 
 ```
+
+
+---?image=assets/images/binary-strings-black2.jpg
+@title[Using WinDBG Section]
+<br><br><br><br><br><br><br>
+### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debugging using WinDBG</span>
+<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+Note:
+
+
+---?image=/assets/images/slides/Slide70.JPG
+@title[Configure SoftDebugger.ini (Host)]
+<p align="center"><span class="gold" ><b>Configure SoftDebugger.ini (Host)</b></span></p>
+<br>
+```php
+[Debug Port]
+; Channel = Usb
+Channel = Serial
+
+;The following settings only apply when Channel=Serial
+Port = COM1
+FlowControl = 1
+BaudRate = 115200
+
+[Target System]
+
+[Debugger]
+
+[Features]
+LoadModuleSymbol = 1
+TerminalRedirectionPort = 20715
+
+[Maintenance]
+Debug=1
+```
+
+Note:
+
+
+---?image=/assets/images/slides/Slide72.JPG
+@title[Launch the UDK Debugger Tool]
+<p align="center"><span class="gold" ><b>Launch the UDK Debugger Tool Application</b></span></p>
+<br>
+
+
+Note:
+- Start WinDbg with Intel UDK Debugger Tool
+- Start up the target system using the UDK based firmware image with the debug feature enabled (within 30 seconds after starting WinDbg)
+
+- Wait two or three seconds, until WinDbg is connected and is ready to accept commands
+
+
+
+
+---?image=/assets/images/slides/Slide74.JPG
+@title[Initial Breakpoint for Debugger]
+<p align="center"><span class="gold" ><b>Initial Breakpoint for Debugger</b></span></p>
+<br>
+
+
+Note:
+
+- WinDBG will stop the TARGET in late SEC phase, and load the symbols for SecCore.
+
+
+
+---?image=/assets/images/slides/Slide76.JPG
+@title[Initial Breakpoint for Debugger]
+<p align="center"><span class="gold" ><b>Initial Breakpoint for Debugger</b></span></p>
+<br>
+<span style="font-size:0.9em"> Code can be viewed after a “Control Break”</span>
+
+
+Note:
+
+
+
+---?image=/assets/images/slides/Slide78.JPG
+<!-- .slide: data-transition="none" -->
+@title[View Source from Call Stack]
+<p align="center"><span class="gold" ><b>View Source from Call Stack</b></span></p>
+<br>
+
+<div class="left">
+<ul>
+ <li><span style="font-size:0.7em" ><u>Alt</u> +6 - View Call Stack</span> <\li>
+ <li><span style="font-size:0.7em" >Double click on desired source code</span><\li><br>
+ <li><span style="font-size:0.7em" ></span><\li>
+</ul>
+</div>
+<div class="right">
+<span style="font-size:0.8em" >&nbsp;  </span>
+</div>
+
+Note:
+
++++?image=/assets/images/slides/Slide79.JPG
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
+@title[View Source from Call Stack]
+<p align="center"><span class="gold" ><b>View Source from Call Stack</b></span></p>
+<br>
+
+<div class="left">
+<ul>
+ <li><span style="font-size:0.7em" ><u>Alt</u> +6 - View Call Stack</span> <\li>
+ <li><span style="font-size:0.7em" >Double click on desired source code</span><\li><br>
+ <li><span style="font-size:0.7em" >Double click to open source code for PeiDispatcher</span><\li>
+</ul>
+</div>
+<div class="right">
+<span style="font-size:0.8em" >&nbsp;  </span>
+</div>
+
+Note:
+
+
++++?image=/assets/images/slides/Slide81.JPG
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
+@title[PeiDispatcher.c Opened from Call Stack]
+<p align="center"><span class="gold" ><b>PeiDispatcher.c Opened from Call Stack</b></span></p>
+<br>
+
+Note:
+
+- can only set a breakpoint if current IP is within that module check by stepping...
+
+
+---?image=/assets/images/slides/Slide83.JPG
+<!-- .slide: data-transition="none" -->
+@title[Set a Break Point from the Call Stack]
+<p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
+<br>
+
+Note:
+
+1. Click on desired location in the Call Stack
+2. Select w/ Cntl-C (copy)
+3. Alt+F9 – Breakpoints menu
+4. Add “bp” command  and Cntl-v to (paste) from Call Stack reference 
+6. Click “OK” 	
+7. Press “F5” to Go
+
+
+
++++?image=/assets/images/slides/Slide84.JPG
+<!-- .slide: data-background-transition="none" -->
+<!-- .slide: data-transition="none" -->
+@title[Set a Break Point from the Call Stack]
+<p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
+<br>
+
+Note:
+
+1. Click on desired location in the Call Stack
+2. Select w/ Cntl-C (copy)
+3. Alt+F9 – Breakpoints menu
+4. Add “bp” command  and Cntl-v to (paste) from Call Stack reference 
+6. Click “OK” 	
+7. Press “F5” to Go
+
+
+---?image=/assets/images/slides/Slide86.JPG
+@title[Next “Go” will break in Pei Dispatcher.c]
+<p align="center"><span class="gold" ><b>Next “Go” will break in Pei Dispatcher.c</b></span></p>
+<br>
+
+
+---?image=assets/images/binary-strings-black2.jpg
+@title[End Using WinDBG Section]
+<br><br><br><br><br><br><br>
+### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of WinDBG</span>
+<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+Note:
+
+
+---?image=assets/images/gitpitch-audience.jpg
+@title[Logo Slide]
+<br><br><br>
+![Logo Slide](/assets/images/TianocoreLogo.png =10x)
