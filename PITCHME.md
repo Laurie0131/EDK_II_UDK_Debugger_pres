@@ -139,7 +139,7 @@ Note:
   <li><span style="font-size:0.9em" >Debug Tool (WINDBG) x86, version 6.11.0001.404</span></li>
   <li><span style="font-size:0.9em" >Intel UDK Debugger Tool </span></li>
   <li><span style="font-size:0.9em" >WinDBG Extensions in edk2.dll <a href="http://msdl.microsoft.com/download/symbols/debuggers/dbg_x86_6.11.1.404.msi">http://msdl.microsoft.com/ ... /dbg_x86_6.11.1.404.msi </a></span></li><br>
-  <li><span style="font-size:0.5em" >Details on WinDBG setup - <a href="/44"> Debugging using WinDBG</a> </span></li>
+  <li><span style="font-size:0.5em" >Details on WinDBG - <a href="https://gitpitch.com/Laurie0131/EDK_II_UDK_Debugger_pres/master#/44"> Debugging using WinDBG</a> </span></li>
   
 </ul>
 
@@ -151,7 +151,7 @@ Note:
 @title[Host Configuration Requirements - Linux ]
 <p align="right"><span class="gold" >Host Configuration Requirements </span></p>
 <br>
-<span style="font-size:01.1em" >Linux</span>
+fa[linux gp-bullet-white]<span style="font-size:01.1em" >&nbsp;&nbsp;Linux</span>
 <br>
 <br>
 <br>
