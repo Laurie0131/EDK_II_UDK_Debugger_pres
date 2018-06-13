@@ -66,7 +66,7 @@ Note:
 @title[UDK Debugger Overview]
 <br>
 <p align="center"<span class="gold"   >Intel® UEFI Development Kit Debugger Tool </span></p>
-
+<br>
 @ul[no-bullet]
  - @fa[star gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers &<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OpROM</span> 
  - @fa[star gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Low-cost alternative to ITP/JTAG debug</span> 
@@ -156,7 +156,7 @@ Note:
 <br>
 <br>
 <ul>
-  <li><span style="font-size:0.9em" >Ubuntu 16.04 LTS client (x64 build)</span></li><br>
+  <li><span style="font-size:0.9em" >Ubuntu 16.04 LTS client (x64 build)</span><span style="font-size:0.6em" >- validated and examples shown</span></li><br>
   <li><span style="font-size:0.9em" >GNU Debugger (GDB) - </span><span style="font-size:0.7em" >with Expat library</span></li><br>
   <li><span style="font-size:0.9em" >Intel UDK Debugger Tool 1.5.1 </span></li>
 </ul>
@@ -415,7 +415,7 @@ Note:
 <br>
 <ul style="list-style-type:none">
  <li>@fa[star gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Configure target to use COM port via PCD</span> </li>
- <li>@fa[star gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modules/features</span> </li>
+ <li>@fa[star gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modules/features</span> </li>
  <li>@fa[star gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;COM 1 is the default on target</span> </li>
  <li>@fa[star gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Simple “ASCII Print” though COM port is allowed</span> </li>
  <li>@fa[star gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Non-NULL DebugAgent library instance must be used</span> </li>
@@ -678,7 +678,7 @@ Note:
 <span style="font-size:0.8em" >Debugging Sec phase</span>
 <br>
 <br>
-<span style="font-size:0.8em" ><font color="yellow">SORRY</font> - Requires a hardware debugger</span>
+<span style="font-size:0.9em" ><font color="yellow">SORRY</font> - Requires a hardware debugger</span>
 </div>
 
 
@@ -691,10 +691,10 @@ SEC Must use hardware debugger, not Intel® UEFI Development Kit Debugger
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - PEI</b></span></p>
 <br>
 <br>
-<div class="left-2">
+<div class="left-1">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
-<div class="right-2">
+<div class="right-1">
 <ul style="list-style-type:disc">
  <li><span style="font-size:0.8em" >Use debugger prior to PEI Main</span></li>
  <li><span style="font-size:0.8em" >Check proper execution of PEI drivers </span></li>
@@ -760,7 +760,7 @@ Note:
 @title[Check for transition from PEI to DXE]
 <p align="center"><span class="gold" ><b>Check for transition from PEI to DXE</b></span></p>
 <br>
-<span style="font-size:0.8em" >Critical point before calling DXE </span><br>
+<span style="font-size:0.8em" >Critical point before calling DXE in: </span><br>
 @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Core/Pei/PeiMain">MdeModulePkg/Core/Pei/PeiMain.c </a></span><br>
 <span style="font-size:0.8em" >Add `CpuBreakpoint();` before entering DxeIpl</span>
 
@@ -793,9 +793,9 @@ There may also be issues with transition from 32 to 64 bit so this makes a good 
 ---
 @title[Check for transition from DxeIpl to DXE]
 <p align="center"><span class="gold" ><b>Check for transition from DxeIpl to DXE</b></span></p>
-<span style="font-size:0.8em" >Critical point before calling DXE Core </span><br>
+<span style="font-size:0.8em" >Critical point before calling DXE Core in: </span><br>
 @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Core/DxeIplPeim">MdeModulePkg/Core/DxeIplPeim/DxeLoad.c </a></span><br>
-<span style="font-size:0.7em" >Add `CpuBreakpoint();` before entering Dxe Core</span><span style="font-size:0.5em" >(Notice also this is a standalone module - DxeIpl.efi)</span>
+<span style="font-size:0.7em" >Before entering Dxe Core</span><span style="font-size:0.5em" >&nbsp;&nbsp;(&nbsp;Notice also this is a standalone module - DxeIpl.efi)</span>
 
 ```c
 EFI_STATUS
@@ -860,9 +860,9 @@ Note:
 @title[DXE: Trace Each Driver Load]
 <p align="center"><span class="gold" ><b>DXE: Trace Each Driver Load</b></span></p>
 <br>
-<span style="font-size:0.8em" >DXE Disspatcher calls to each driver entry point</span><br>
+<span style="font-size:0.8em" >DXE Disspatcher calls to each driver's entry point in: </span><br>
 @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Core/Dxe/Image">MdeModulePkg/Core/Dxe/Image/Image.c </a></span><br>
-<span style="font-size:0.8em" >Break every time a new DXE driver is loaded. </span>
+<span style="font-size:0.8em" >Break every time a DXE driver is loaded. </span>
 
 ```c
 EFI_STATUS
@@ -919,7 +919,7 @@ Note:
 @title[BDS Phase – Entry Point]
 <p align="center"><span class="gold" ><b>BDS Phase – Entry Point</b></span></p>
 <br>
-<span style="font-size:0.8em" >DXE call to BDS entry point</span><br>
+<span style="font-size:0.8em" >DXE call to BDS entry point in:</span><br>
 @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Core/Dxe/DxeMain">MdeModulePkg/Core/Dxe/DxeMain/DxeMain.c </a></span><br>
 <span style="font-size:0.8em" >Add `CpuBreakpoint();` to break before BDS. </span>
 
@@ -961,10 +961,10 @@ Note:
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - Pre-Boot</b></span></p>
 <br>
 <br>
-<div class="left-1">
+<div class="left">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
-<div class="right-1">
+<div class="right">
 <ul style="list-style-type:disc">
  <li><span style="font-size:0.8em" >“C” source debugging</span></li>
  <li><span style="font-size:0.8em" >UEFI Drivers  </span></li>
@@ -978,7 +978,7 @@ Note:
    <li><span style="font-size:0.6em" >Entry point</span></li>
    <li><span style="font-size:0.6em" >Local variables</span></li>
  </ul>
- <li><span style="font-size:0.6em" >`CpuBreakpoint();`</span></li>
+ <li><span style="font-size:0.8em" >`CpuBreakpoint();`</span></li>
  </ul>
 </div>
 
@@ -1052,13 +1052,14 @@ Note:
 @title[Summary]
 <BR>
 ### <p align="center"><span class="gold"   >Summary </span></p><br>
-@ul[no-bullet]
- <li>@fa[snowflake gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers & OpROM</span> </li>
- <li>@fa[snowflake gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Low-cost alternative to ITP/JTAG debug</span> </li>
- <li>@fa[snowflake gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Host-to-target connect via COM port or USB debug port</span> </li>
- <li>@fa[snowflake gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Open source based on existing software debuggers <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for Windows & Linux</span></li>
- <li>@fa[snowflake gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;User Manual PDF</span></li>
-@ulend
+<ul style="list-style-type:none">
+ <li>@fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Identify the Intel® UEFI Development Kit Debugger<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; host and target basic configuration and components</span> </li>
+ <li>@fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Access the debugger tools</span></li>
+ <li>@fa[certificate gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Make changes to the target firmware</span> </li>
+ <li>@fa[certificate gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Launch the debug application</span></li>
+ <li>@fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Use debug commands</span> </li>
+ <li>@fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Debugging PI’s phases</span> </li>
+</ul>
 
 ---?image=assets/images/gitpitch-audience.jpg
 @title[Questions]
