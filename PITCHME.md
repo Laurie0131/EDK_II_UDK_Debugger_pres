@@ -65,14 +65,14 @@ Note:
 ---  
 @title[UDK Debugger Overview]
 <br>
-<p align="center"<span class="gold"   >Intel® UEFI Development Kit Debugger Tool </span></p><br>
-<BR>
+<p align="center"<span class="gold"   >Intel® UEFI Development Kit Debugger Tool </span></p>
+
 @ul[no-bullet]
- - @fa[sun gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers & OpROM</span> 
- - @fa[sun gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Low-cost alternative to ITP/JTAG debug</span> 
- - @fa[sun gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Host-to-target connect via COM port or USB debug port</span> 
- - @fa[sun gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Open source based on existing software debuggers <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for Windows & Linux</span>
- - @fa[sun gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;User Manual PDF</span>
+ - @fa[star gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers &<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OpROM</span> 
+ - @fa[star gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Low-cost alternative to ITP/JTAG debug</span> 
+ - @fa[star gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Host-to-target connect via COM port or USB debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; port</span> 
+ - @fa[star gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Open source based on existing software debuggers <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for Windows & Linux</span>
+ - @fa[star gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;User Manual PDF</span>
 @ulend
 
 
@@ -169,7 +169,7 @@ Note:
 <p align="right"><span class="gold" >Host Configuration Requirements -GDB </span></p>
 <span style="font-size:0.9em" >Check for the configuration of GDB that is installed  </span>
 ```
-bash$ gdb -- configuration
+bash$ gdb --configuration
 ```
 
 <div class="left">
@@ -181,7 +181,12 @@ bash$ sudo apt-get install gdb
 ```
 </pre>
 <span style="font-size:0.6em" > Download `gdb` source and compile with Expat library if there is <b>no</b> "`--with-expat`" as on the screen shot here</span>
-
+<pre>
+```
+bash$ ./configure --target=x86_64-w64-mingw32 --with-expat
+bash$ make
+```
+</pre> 
 </div>
 <div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -280,6 +285,8 @@ Note:
 @title[Changes to Target Firmware]
 <p align="center"><span class="gold" >Changes to Target Firmware</span></p>
 <span style="font-size:0.9em" ><font color="#A8ff60"> Goal: Minimize changes to target firmware</font>  </span>
+<br>
+<br>
 <br>
 <div class="left">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -408,7 +415,7 @@ Note:
 <br>
 <ul style="list-style-type:none">
  <li>@fa[star gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Configure target to use COM port via PCD</span> </li>
- <li>@fa[star gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project<br>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp modules/features</span> </li>
+ <li>@fa[star gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modules/features</span> </li>
  <li>@fa[star gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;COM 1 is the default on target</span> </li>
  <li>@fa[star gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Simple “ASCII Print” though COM port is allowed</span> </li>
  <li>@fa[star gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Non-NULL DebugAgent library instance must be used</span> </li>
@@ -682,12 +689,13 @@ SEC Must use hardware debugger, not Intel® UEFI Development Kit Debugger
 ---?image=/assets/images/slides/Slide50.JPG
 @title[Debugging the Boot Phases PEI]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - PEI</b></span></p>
-
+<br>
+<br>
 <div class="left-2">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 <div class="right-2">
-<ul style="list-style-type:none">
+<ul style="list-style-type:disc">
  <li><span style="font-size:0.8em" >Use debugger prior to PEI Main</span></li>
  <li><span style="font-size:0.8em" >Check proper execution of PEI drivers </span></li>
  <li><span style="font-size:0.8em" >Execute basic chipset & Memory init. </span></li>
@@ -769,7 +777,7 @@ PeiCore (
   //
   DEBUG ((EFI_D_INFO, "DXE IPL Entry\n"));
 // Add a call to CpuBreakpoint();  approx. line 468
-        CpuBreakpoint();
+  CpuBreakpoint();
   Status = TempPtr.DxeIpl->Entry (
                              TempPtr.DxeIpl,
                              &PrivateData.Ps,
@@ -785,10 +793,9 @@ There may also be issues with transition from 32 to 64 bit so this makes a good 
 ---
 @title[Check for transition from DxeIpl to DXE]
 <p align="center"><span class="gold" ><b>Check for transition from DxeIpl to DXE</b></span></p>
-<br>
 <span style="font-size:0.8em" >Critical point before calling DXE Core </span><br>
 @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Core/DxeIplPeim">MdeModulePkg/Core/DxeIplPeim/DxeLoad.c </a></span><br>
-<span style="font-size:0.8em" >Add `CpuBreakpoint();` before entering Dxe Core</span><span style="font-size:0.5em" >(Notice also this is a standalone module - DxeIpl.efi)</span>
+<span style="font-size:0.7em" >Add `CpuBreakpoint();` before entering Dxe Core</span><span style="font-size:0.5em" >(Notice also this is a standalone module - DxeIpl.efi)</span>
 
 ```c
 EFI_STATUS
@@ -831,12 +838,13 @@ Note:
 ---?image=/assets/images/slides/Slide55.JPG
 @title[Debugging the Boot Phases DXE]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - DXE</b></span></p>
-
-<div class="left-2">
+<br>
+<br>
+<div class="left-1">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
-<div class="right-2">
-<ul style="list-style-type:none">
+<div class="right-1">
+<ul style="list-style-type:disc">
  <li><span style="font-size:0.8em" >Search for cyclic dependency check </span></li>
  <li><span style="font-size:0.8em" >Trace ASSERTs caused during DXE execution </span></li>
  <li><span style="font-size:0.8em" >Debug individual DXE drivers </span></li>
@@ -854,7 +862,7 @@ Note:
 <br>
 <span style="font-size:0.8em" >DXE Disspatcher calls to each driver entry point</span><br>
 @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Core/Dxe/Image">MdeModulePkg/Core/Dxe/Image/Image.c </a></span><br>
-<span style="font-size:0.8em" >Add `CpuBreakpoint();` to break here every time a new DXE driver is loaded. </span>
+<span style="font-size:0.8em" >Break every time a new DXE driver is loaded. </span>
 
 ```c
 EFI_STATUS
@@ -890,12 +898,13 @@ Note:
 ---?image=/assets/images/slides/Slide58.JPG
 @title[Debugging the Boot Phases BDS]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - BDS</b></span></p>
-
+<br>
+<br>
 <div class="left-2">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 <div class="right-2">
-<ul style="list-style-type:none">
+<ul style="list-style-type:disc">
  <li><span style="font-size:0.8em" >Detect console devices (input and output) </span></li>
  <li><span style="font-size:0.8em" >Check enumeration of all devices’ preset </span></li>
  <li><span style="font-size:0.8em" >Detect boot policy</span></li>
@@ -950,12 +959,13 @@ Note:
 ---?image=/assets/images/slides/Slide61.JPG
 @title[Debugging the Boot Phases Pre-Boot]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - Pre-Boot</b></span></p>
-
-<div class="left-2">
+<br>
+<br>
+<div class="left-1">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
-<div class="right-2">
-<ul style="list-style-type:none">
+<div class="right-1">
+<ul style="list-style-type:disc">
  <li><span style="font-size:0.8em" >“C” source debugging</span></li>
  <li><span style="font-size:0.8em" >UEFI Drivers  </span></li>
  <ul style="list-style-type:disc">
@@ -982,7 +992,8 @@ Note:
 <p align="right"><span class="gold" >Debug in Pre-Boot – UEFI Shell Application</span></p>
 <span style="font-size:0.8em" >Add `CpuBreakpoint()` to SampleApp.c near the entry point</span>
 <br>
-<div class="left1">
+<br>
+<div class="left">
 <span style="font-size:0.7em" >Add SampleApp.inf to the platform .dsc file</span>
 <pre>
 ```
@@ -993,7 +1004,7 @@ bash$ build -m SampleApp/SampleApp.inf
 </pre>
 <span style="font-size:0.7em" >Copy the binary SampleApp.efi to USB drive</span><br>
 </div>
-<div class="right1">
+<div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
@@ -1007,7 +1018,8 @@ Note:
 <p align="right"><span class="gold" >Debug in Pre-Boot – UEFI Shell Application</span></p>
 <span style="font-size:0.8em" >Use UDK Debugger and GDB to debug SampleApp</span>
 <br>
-<div class="left1">
+<br>
+<div class="left">
 <span style="font-size:0.7em" >At the shell prompt on the target invoke SampleApp</span>
 <pre>
 ```
@@ -1018,8 +1030,15 @@ FS0:/> SampleApp
 
 <span style="font-size:0.7em" >GDB will break at the CpuBreakpoint</span><br>
 <span style="font-size:0.7em" >Begin debugging SampleApp </span><br>
+<pre>
+```
+(udb) layout src
+(udb) info locals
+(udb) next
+```
+</pre>
 </div>
-<div class="right1">
+<div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
