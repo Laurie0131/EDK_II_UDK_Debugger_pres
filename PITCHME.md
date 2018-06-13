@@ -1120,7 +1120,6 @@ Note:
 ---?image=/assets/images/slides/Slide70.JPG
 @title[Configure SoftDebugger.ini (Host)]
 <p align="center"><span class="gold" ><b>Configure SoftDebugger.ini (Host)</b></span></p>
-<br>
 ```php
 [Debug Port]
 ; Channel = Usb
@@ -1148,6 +1147,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide72.JPG
 @title[Launch the UDK Debugger Tool]
+<br>
 <p align="center"><span class="gold" ><b>Launch the UDK Debugger Tool Application</b></span></p>
 <br>
 
@@ -1163,6 +1163,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide74.JPG
 @title[Initial Breakpoint for Debugger]
+<br>
 <p align="center"><span class="gold" ><b>Initial Breakpoint for Debugger</b></span></p>
 <br>
 
@@ -1175,8 +1176,8 @@ Note:
 
 ---?image=/assets/images/slides/Slide76.JPG
 @title[Initial Breakpoint for Debugger]
-<p align="center"><span class="gold" ><b>Initial Breakpoint for Debugger</b></span></p>
 <br>
+<p align="center"><span class="gold" ><b>Initial Breakpoint for Debugger</b></span></p>
 <span style="font-size:0.9em"> Code can be viewed after a “Control Break”</span>
 
 
@@ -1192,9 +1193,9 @@ Note:
 
 <div class="left">
 <ul>
- <li><span style="font-size:0.7em" ><u>Alt</u> +6 - View Call Stack</span> <\li>
- <li><span style="font-size:0.7em" >Double click on desired source code</span><\li><br>
- <li><span style="font-size:0.7em" ></span><\li>
+ <li><span style="font-size:0.7em" ><u>Alt</u> +6 - to View Call Stack</span> </li>
+ <li><span style="font-size:0.7em" >Double click on desired source code</span></li><br>
+ <li><span style="font-size:0.7em" ></span></li>
 </ul>
 </div>
 <div class="right">
@@ -1212,9 +1213,9 @@ Note:
 
 <div class="left">
 <ul>
- <li><span style="font-size:0.7em" ><u>Alt</u> +6 - View Call Stack</span> <\li>
- <li><span style="font-size:0.7em" >Double click on desired source code</span><\li><br>
- <li><span style="font-size:0.7em" >Double click to open source code for PeiDispatcher</span><\li>
+ <li><span style="font-size:0.7em" ><u>Alt</u> +6 - View Call Stack</span> </li>
+ <li><span style="font-size:0.7em" >Double click on desired source code</span></li><br>
+ <li><span style="font-size:0.7em" >Double click to open source code for PeiDispatcher</span></li>
 </ul>
 </div>
 <div class="right">
@@ -1228,6 +1229,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[PeiDispatcher.c Opened from Call Stack]
+<br>
 <p align="center"><span class="gold" ><b>PeiDispatcher.c Opened from Call Stack</b></span></p>
 <br>
 
@@ -1239,6 +1241,7 @@ Note:
 ---?image=/assets/images/slides/Slide83.JPG
 <!-- .slide: data-transition="none" -->
 @title[Set a Break Point from the Call Stack]
+<br>
 <p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
 <br>
 
@@ -1257,6 +1260,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Set a Break Point from the Call Stack]
+<br>
 <p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
 <br>
 
@@ -1272,6 +1276,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide86.JPG
 @title[Next “Go” will break in Pei Dispatcher.c]
+<br>
 <p align="center"><span class="gold" ><b>Next “Go” will break in Pei Dispatcher.c</b></span></p>
 <br>
 
