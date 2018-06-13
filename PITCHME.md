@@ -139,7 +139,7 @@ Note:
   <li><span style="font-size:0.9em" >Debug Tool (WINDBG) x86, version 6.11.0001.404</span></li>
   <li><span style="font-size:0.9em" >Intel UDK Debugger Tool </span></li>
   <li><span style="font-size:0.9em" >WinDBG Extensions in edk2.dll <a href="http://msdl.microsoft.com/download/symbols/debuggers/dbg_x86_6.11.1.404.msi">http://msdl.microsoft.com/ ... /dbg_x86_6.11.1.404.msi </a></span></li><br>
-  <li><span style="font-size:0.5em" >Details on WinDBG setup - <a href=""> backup</a> </span></li>
+  <li><span style="font-size:0.5em" >Details on WinDBG setup - <a href="/44"> Debugging using WinDBG</a> </span></li>
   
 </ul>
 
@@ -1194,8 +1194,8 @@ Note:
 <div class="left">
 <ul>
  <li><span style="font-size:0.7em" ><u>Alt</u> +6 - to View Call Stack</span> </li>
- <li><span style="font-size:0.7em" >Double click on desired source code</span></li><br>
- <li><span style="font-size:0.7em" ></span></li>
+ <li><span style="font-size:0.7em" >Double click on desired source code</span></li>
+ 
 </ul>
 </div>
 <div class="right">
@@ -1213,7 +1213,7 @@ Note:
 
 <div class="left">
 <ul>
- <li><span style="font-size:0.7em" ><u>Alt</u> +6 - View Call Stack</span> </li>
+ <li><span style="font-size:0.7em" ><u>Alt</u> +6 - to View Call Stack</span> </li>
  <li><span style="font-size:0.7em" >Double click on desired source code</span></li><br>
  <li><span style="font-size:0.7em" >Double click to open source code for PeiDispatcher</span></li>
 </ul>
