@@ -64,15 +64,15 @@ Note:
 
 ---  
 @title[UDK Debugger Overview]
+<br>
 <p align="center"<span class="gold"   >Intel® UEFI Development Kit Debugger Tool </span></p><br>
-
 <BR>
 @ul[no-bullet]
- <li>@fa[snowflake gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers & OpROM</span> </li>
- <li>@fa[snowflake gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Low-cost alternative to ITP/JTAG debug</span> </li>
- <li>@fa[snowflake gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Host-to-target connect via COM port or USB debug port</span> </li>
- <li>@fa[snowflake gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Open source based on existing software debuggers <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for Windows & Linux</span></li>
- <li>@fa[snowflake gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;User Manual PDF</span></li>
+ - @fa[sun gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers & OpROM</span> 
+ - @fa[sun gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Low-cost alternative to ITP/JTAG debug</span> 
+ - @fa[sun gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Host-to-target connect via COM port or USB debug port</span> 
+ - @fa[sun gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Open source based on existing software debuggers <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for Windows & Linux</span>
+ - @fa[sun gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;User Manual PDF</span>
 @ulend
 
 
@@ -81,6 +81,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide4.JPG
 @title[UDK Debugger tool block diagram]
+<br>
 <p align="center"><span class="gold" >Intel® UEFI Development Kit Debugger Tool</span></p>
 
 Note:
@@ -106,15 +107,18 @@ Note:
 
 ---?image=/assets/images/slides/Slide8.JPG
 @title[Distribution ]
-<p align="right"><span class="gold" >Distribution </span></p>
-<span style="font-size:0.9em" > Download  host application from <a href="http:/firmware.intel.com ">http:/firmware.intel.com  </a>&nbsp;-&nbsp; <a href="http://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop">Develop - Tools</a></span>
+<p align="center"><span class="gold" >Distribution </span></p>
+<span style="font-size:0.8em" > Download  application : <a href="http:/firmware.intel.com ">http:/firmware.intel.com  </a>&nbsp;-&nbsp; <a href="http://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop">Develop - Tools</a></span>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<span style="font-size:0.8em" >Target source: `SourceLevelDebugPkg` at @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/tianocore.github.io/wiki/SourceLevelDebugPkg">Tianocore.org </a>
+<br>
+<br>
+<br>
+<span style="font-size:0.6em" >Target source: `SourceLevelDebugPkg` at @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/tianocore.github.io/wiki/SourceLevelDebugPkg">Tianocore.org </a>
 
 Note:
 
@@ -126,6 +130,7 @@ Note:
 ---?image=/assets/images/slides/Slide10.JPG
 @title[Host Configuration Requirements - Windows ]
 <p align="right"><span class="gold" >Host Configuration Requirements </span></p>
+<br>
 @fa[windows gp-bullet-cyan]<span style="font-size:01.1em" >&nbsp;&nbsp;Microsoft Windows </span>
 <br>
 <br>
@@ -133,7 +138,9 @@ Note:
   <li><span style="font-size:0.9em" >XP with Service Pack 3 and Windows 7 and Windows 10</span></li>
   <li><span style="font-size:0.9em" >Debug Tool (WINDBG) x86, version 6.11.0001.404</span></li>
   <li><span style="font-size:0.9em" >Intel UDK Debugger Tool </span></li>
-  <li><span style="font-size:0.9em" >WinDBG Extensions in edk2.dll <a href="http://msdl.microsoft.com/download/symbols/debuggers/dbg_x86_6.11.1.404.msi">http://msdl.microsoft.com/download/symbols/debuggers/dbg_x86_6.11.1.404.msi </a></span></li>
+  <li><span style="font-size:0.9em" >WinDBG Extensions in edk2.dll <a href="http://msdl.microsoft.com/download/symbols/debuggers/dbg_x86_6.11.1.404.msi">http://msdl.microsoft.com/ ... /dbg_x86_6.11.1.404.msi </a></span></li><br>
+  <li><span style="font-size:0.5em" >Details on WinDBG setup - <a href=""> backup</a> </span></li>
+  
 </ul>
 
 Note:
@@ -143,19 +150,21 @@ Note:
 ---?image=/assets/images/slides/Slide11.JPG
 @title[Host Configuration Requirements - Linux ]
 <p align="right"><span class="gold" >Host Configuration Requirements </span></p>
+<br>
 <span style="font-size:01.1em" >Linux</span>
 <br>
 <br>
+<br>
 <ul>
-  <li><span style="font-size:0.9em" >Ubuntu 16.04 LTS client (x64 build)</span></li>
-  <li><span style="font-size:0.9em" >GNU Debugger (GDB) - </span><span style="font-size:0.7em" >with Expat library</span></li>
+  <li><span style="font-size:0.9em" >Ubuntu 16.04 LTS client (x64 build)</span></li><br>
+  <li><span style="font-size:0.9em" >GNU Debugger (GDB) - </span><span style="font-size:0.7em" >with Expat library</span></li><br>
   <li><span style="font-size:0.9em" >Intel UDK Debugger Tool 1.5.1 </span></li>
 </ul>
 
 Note:
 
 
----?image=/assets/images/slides/Slide11.JPG
+---?image=/assets/images/slides/Slide12.JPG
 @title[Host Configuration Requirements - Linux GDB ]
 <p align="right"><span class="gold" >Host Configuration Requirements -GDB </span></p>
 <span style="font-size:0.9em" >Check for the configuration of GDB that is installed  </span>
@@ -163,7 +172,7 @@ Note:
 bash$ gdb -- configuration
 ```
 
-<div class="left1">
+<div class="left">
 <span style="font-size:0.7em" > Install `gdb` if not installed</span>
 <pre>
 ```
@@ -171,9 +180,17 @@ bash$ sudo apt-get update
 bash$ sudo apt-get install gdb
 ```
 </pre>
-<span style="font-size:0.7em" > Download `gdb` source and compile with Expat library if there is <b>no</b> "`--with-expat`" as on the screen shot here</span>
+<span style="font-size:0.6em" > Download `gdb` source and compile with Expat library if there is <b>no</b> "`--with-expat`" as on the screen shot here</span>
+
+</div>
+<div class="right">
+<span style="font-size:0.8em" >&nbsp;  </span>
+</div>
+
+Note:
+
+- If need to compile with expat
 <pre>
-```
  // 1. Download and extract
  bash$ wget "http://ftp.gnu.org/gnu/gdb/gdb-7.11.tar.gz" 
  bash$ tar -xvzf gdb-7.11.tar.gz 
@@ -185,16 +202,8 @@ bash$ sudo apt-get install gdb
  bash$ make 
  // 3. install
  bash$ make install
-```
+
 </pre>
-</div>
-<div class="right1">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
-
-Note:
-
-
 
 ---?image=/assets/images/slides/Slide13.JPG
 @title[Install UDK Debugger - Linux ]
@@ -255,25 +264,27 @@ Note:
 
 Note:
 
-
+- Serial Null Modem
+- USB 2.0 Debug
+- USB 3.0
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Changes to target Section]
 <br><br><br><br><br><br><br>
 ### <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Changes to target</span>
-<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Required changes needed to be built with the target platform</span>
+<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Required changes needed to be built with the target <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;platform</span>
 
 Note:
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Changes to Target Firmware]
-<p align="right"><span class="gold" >Changes to Target Firmware</span></p>
-<span style="font-size:0.8em" ><font color="#A8ff60"> Goal: Minimize changes to target firmware</font>  </span>
+<p align="center"><span class="gold" >Changes to Target Firmware</span></p>
+<span style="font-size:0.9em" ><font color="#A8ff60"> Goal: Minimize changes to target firmware</font>  </span>
 <br>
-<div class="left-2">
+<div class="left">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
-<div class="right-2">
+<div class="right">
 <span style="font-size:0.8em" >Add call to the library class (`DebugAgentLib`) In `SEC`, `DXE` Main, and `SMM CPU` Modules</span>
 <br>
 <br>
@@ -397,7 +408,7 @@ Note:
 <br>
 <ul style="list-style-type:none">
  <li>@fa[star gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Configure target to use COM port via PCD</span> </li>
- <li>@fa[star gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project modules/features</span> </li>
+ <li>@fa[star gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Ensure COM port not used by other project<br>&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp modules/features</span> </li>
  <li>@fa[star gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;COM 1 is the default on target</span> </li>
  <li>@fa[star gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Simple “ASCII Print” though COM port is allowed</span> </li>
  <li>@fa[star gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Non-NULL DebugAgent library instance must be used</span> </li>
@@ -446,13 +457,12 @@ Note:
 <p align="right"><span class="gold" >Source Level Debug Features</span></p>
 <br>
 @ul[no-bullet]
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #7030a0"><b>&nbsp;&nbsp;View call stack</b> &nbsp;&nbsp;</b></span><span style="background-color: #92d050"><b>&nbsp;Go&nbsp;</b></span></p><br>
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #BF5122">&nbsp;&nbsp;<b>Insert `CpuBreakpoint()`</b>&nbsp;&nbsp;</span></span><br>
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #00b0f0">&nbsp;&nbsp;<b>View and edit local/global variables</b>&nbsp;&nbsp;</span></span><br>
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #202020"><b>&nbsp;&nbsp;Set breakpoint</b> &nbsp;&nbsp;</b></span><span style="background-color: #7030a0"><b>&nbsp;Step into/over routines&nbsp;</b></span></p><br>
-- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #e49436"><b>&nbsp;&nbsp;Go till</b> &nbsp;&nbsp;</b></span><span style="background-color: #92d050"><b>&nbsp;View disassembled code&nbsp;</b></span></p><br>
+- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #7030a0"><b>&nbsp;&nbsp;View call stack</b> &nbsp;&nbsp;</b></span><span style="background-color: #92d050"><b>&nbsp;Go&nbsp;</b></span></p>
+- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #BF5122">&nbsp;&nbsp;<b>Insert `CpuBreakpoint()`</b>&nbsp;&nbsp;</span></span><br><br>
+- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #00b0f0">&nbsp;&nbsp;<b>View and edit local/global variables</b>&nbsp;&nbsp;</span></span><br><br>
+- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #202020"><b>&nbsp;&nbsp;Set breakpoint</b> &nbsp;&nbsp;</b></span><span style="background-color: #7030a0"><b>&nbsp;Step into/over routines&nbsp;</b></span></p>
+- <span style="font-size:01.0em" >&nbsp;<span style="background-color: #e49436"><b>&nbsp;&nbsp;Go till</b> &nbsp;&nbsp;</b></span><span style="background-color: #92d050"><b>&nbsp;View disassembled code&nbsp;</b></span></p>
 - <span style="font-size:01.0em" >&nbsp;<span style="background-color: #BF5122">&nbsp;&nbsp;<b>View/edit general purpose register values&nbsp;</b>&nbsp;&nbsp;</span></span><br>
-
 @ulend
 
 Note:
@@ -466,7 +476,8 @@ Note:
 <p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
 <span style="font-size:0.9em" >Example showing Ubuntu 16.04 LTS with GDB </span>
 <br>
-<div class="left1">
+<br>
+<div class="left">
 <span style="font-size:0.7em" > Need to open 3 Terminal prompt windows<br>First Terminal(1) is the UDK debugger server </span>
 
 <pre>
@@ -477,7 +488,7 @@ Note:
 </pre>
 <span style="font-size:0.7em" > Power on the Target and wait 2-3 seconds</span><br>
 </div>
-<div class="right1">
+<div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
@@ -489,7 +500,8 @@ Note:
 <p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
 <span style="font-size:0.9em" >Example showing Ubuntu 16.04 LTS with GDB </span>
 <br>
-<div class="left1">
+<br>
+<div class="left">
 <span style="font-size:0.7em" > Open a second  Terminal(2) for GDB </span>
 <pre>
 ```
@@ -505,7 +517,7 @@ Note:
 </pre>
 <span style="font-size:0.7em" > Terminal(1) will show "Connection from localhost" message</span>
 </div>
-<div class="right1">
+<div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
@@ -518,7 +530,8 @@ Note:
 <p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
 <span style="font-size:0.9em" >Example showing Ubuntu 16.04 LTS with GDB </span>
 <br>
-<div class="left1">
+<br>
+<div class="left">
 <span style="font-size:0.7em" > Open the udk scripts in  GDB - Terminal(2) </span>
 <pre>
 ```
@@ -527,7 +540,7 @@ Note:
 </pre>
 <span style="font-size:0.7em" > Symbols will show for PeiCore, also notice the prompt changes from "(gdb)" to "(udb)"</span>
 </div>
-<div class="right1">
+<div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
@@ -538,7 +551,7 @@ Note:
 ---?image=/assets/images/slides/Slide38.JPG
 @title[Launching UDK Debugger- terminal]
 <p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
-<span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.5em" >Example showing "screen" terminal program</span>
+<span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.5em" >&nbsp; &nbsp; &nbsp; - &nbsp; Example showing "screen" terminal program</span>
 <br>
 
 Note:
@@ -552,7 +565,8 @@ Note:
 @title[UDK Debugger - setting break points]
 <p align="right"><span class="gold" >UDK Debugger - Setting break points</span></p>
 <br>
-<div class="left1">
+<br>
+<div class="left">
 <span style="font-size:0.7em" >Terminal(2) Breakpoint at PeiDispatcher </span>
 <pre>
 ```
@@ -572,7 +586,7 @@ Note:
 ```
 </pre>
 </div>
-<div class="right1">
+<div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
 </div>
 
@@ -597,7 +611,7 @@ Note:
 Note:
 
 
-+++?image=/assets/images/slides/Slide44.J4PG
++++?image=/assets/images/slides/Slide44.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Debugging the Boot Phases 02]
@@ -607,7 +621,7 @@ Note:
 Note:
 
 
-+++?image=/assets/images/slides/Slide45.J4PG
++++?image=/assets/images/slides/Slide45.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Debugging the Boot Phases 03]
@@ -617,7 +631,7 @@ Note:
 Note:
 
 
-+++?image=/assets/images/slides/Slide46.J4PG
++++?image=/assets/images/slides/Slide46.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Debugging the Boot Phases 04]
@@ -627,7 +641,7 @@ Note:
 Note:
 
 
----?image=/assets/images/slides/Slide48.J4PG
+---?image=/assets/images/slides/Slide48.JPG
 <!-- .slide: data-background-transition="none" -->
 @title[Debugging the Boot Phases SEC]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - SEC</b></span></p>
@@ -645,7 +659,7 @@ Note:
 
 Note:
 
-+++?image=/assets/images/slides/Slide49.J4PG
++++?image=/assets/images/slides/Slide49.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Debugging the Boot Phases SEC 02]
