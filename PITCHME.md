@@ -860,7 +860,7 @@ Note:
 @title[DXE: Trace Each Driver Load]
 <p align="center"><span class="gold" ><b>DXE: Trace Each Driver Load</b></span></p>
 <br>
-<span style="font-size:0.8em" >DXE Disspatcher calls to each driver's entry point in: </span><br>
+<span style="font-size:0.8em" >DXE Dispatcher calls to each driver's entry point in: </span><br>
 @fa[github gp-bullet-gold]<span style="font-size:0.8em">&nbsp;&nbsp;<a href="https://github.com/tianocore/edk2/tree/master/MdeModulePkg/Core/Dxe/Image">MdeModulePkg/Core/Dxe/Image/Image.c </a></span><br>
 <span style="font-size:0.8em" >Break every time a DXE driver is loaded. </span>
 
