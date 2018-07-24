@@ -82,7 +82,7 @@ Note:
 ---?image=/assets/images/slides/Slide4.JPG
 @title[UDK Debugger tool block diagram]
 <br>
-<p align="center"><span class="gold" >Intel® UEFI Development Kit Debugger Tool</span></p>
+<p align="center"><span class="gold" ><b>Intel® UEFI Development Kit Debugger Tool</b></span></p>
 
 Note:
 
@@ -107,7 +107,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide8.JPG
 @title[Distribution ]
-<p align="center"><span class="gold" >Distribution </span></p>
+<p align="center"><span class="gold" ><b>Distribution </b></span></p>
 <span style="font-size:0.8em" > Download  application : <a href="http:/firmware.intel.com ">http:/firmware.intel.com  </a>&nbsp;-&nbsp; <a href="http://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop">Develop - Tools</a></span>
 <br>
 <br>
@@ -129,7 +129,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide10.JPG
 @title[Host Configuration Requirements - Windows ]
-<p align="right"><span class="gold" >Host Configuration Requirements </span></p>
+<p align="right"><span class="gold" ><b>Host Configuration Requirements </b></span></p>
 <br>
 @fa[windows gp-bullet-cyan]<span style="font-size:01.1em" >&nbsp;&nbsp;Microsoft Windows </span>
 <br>
@@ -149,7 +149,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide11.JPG
 @title[Host Configuration Requirements - Linux ]
-<p align="right"><span class="gold" >Host Configuration Requirements </span></p>
+<p align="right"><span class="gold" ><b>Host Configuration Requirements </b></span></p>
 <br>
 @fa[linux gp-bullet-white]<span style="font-size:01.1em" >&nbsp;&nbsp;Linux</span>
 <br>
@@ -166,7 +166,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide12.JPG
 @title[Host Configuration Requirements - Linux GDB ]
-<p align="right"><span class="gold" >Host Configuration Requirements -GDB </span></p>
+<p align="right"><span class="gold" ><b>Host Configuration Requirements -GDB </b></span></p>
 <span style="font-size:0.9em" >Check for the configuration of GDB that is installed  </span>
 ```
 bash$ gdb --configuration
@@ -212,7 +212,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide13.JPG
 @title[Install UDK Debugger - Linux ]
-<p align="right"><span class="gold" >Install UDK Debugger - Linux</span></p>
+<p align="right"><span class="gold" ><b>Install UDK Debugger - Linux</b></span></p>
 <span style="font-size:0.9em" >Download the Linux tool from : <a href="http://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop">http://firmware.intel.com</a></span>
 <br>
 <div class="left1">
@@ -237,7 +237,7 @@ Note:
 
 +++?image=/assets/images/slides/Slide14.JPG
 @title[Install UDK Debugger - Linux 02]
-<p align="right"><span class="gold" >Install UDK Debugger - Linux</span></p>
+<p align="right"><span class="gold" ><b>Install UDK Debugger - Linux</b></span></p>
 <span style="font-size:0.9em" >Menu to configure the tool for the port</span>
 <br>
 <div class="left1">
@@ -266,7 +266,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide17.JPG
 @title[Debug Cable Options]
-<p align="right"><span class="gold" >Debug Cable Options</span></p>
+<p align="right"><span class="gold" ><b>Debug Cable Options</b></span></p>
 
 
 Note:
@@ -285,7 +285,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Changes to Target Firmware]
-<p align="center"><span class="gold" >Changes to Target Firmware</span></p>
+<p align="center"><span class="gold" ><b>Changes to Target Firmware</b></span></p>
 <span style="font-size:0.9em" ><font color="#A8ff60"> Goal: Minimize changes to target firmware</font>  </span>
 <br>
 <br>
@@ -309,7 +309,7 @@ Note:
 ---?image=/assets/images/slides/Slide23.JPG
 <!-- .slide: data-transition="none" -->
 @title[Updates to DSC]
-<p align="right"><span class="gold" >Updates to DSC</span></p>
+<p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
 
 Note:
 
@@ -338,7 +338,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[Updates to DSC 02]
-<p align="right"><span class="gold" >Updates to DSC</span></p>
+<p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
 
 Note:
 
@@ -365,7 +365,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide26.JPG
 @title[Updates to DSC USB 3.0]
-<p align="right"><span class="gold" >Updates to DSC for USB 3.0</span></p>
+<p align="right"><span class="gold" ><b>Updates to DSC for USB 3.0</b></span></p>
 
 Note:
 
@@ -390,7 +390,7 @@ Note:
 
 ---
 @title[Updates to FDF]
-<p align="right"><span class="gold" >Updates to FDF</span></p>
+<p align="right"><span class="gold" ><b>Updates to FDF</b></span></p>
 <br>
 <p style="line-height:80%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.7em" ><br> - this is so there is no conflict with the terminal console driver</span></p>
 ```php
@@ -413,7 +413,7 @@ Note:
 
 ---
 @title[Configure COM Port (PCD) (Target)]
-<p align="right"><span class="gold" >Configure COM Port (PCD) (Target)</span></p>
+<p align="right"><span class="gold" ><b>Configure COM Port (PCD) (Target)</b></span></p>
 <br>
 <ul style="list-style-type:none">
  <li>@fa[bullseye gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Configure target to use COM port via PCD</span> </li>
@@ -426,7 +426,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Configure Host - Linux ]
-<p align="right"><span class="gold" >Configure the Host - Linux</span></p>
+<p align="right"><span class="gold" ><b>Configure the Host - Linux</b></span></p>
 <span style="font-size:0.9em" >Menu to configure the tool for the port on installation</span>
 <br>
 <div class="left1">
@@ -464,7 +464,7 @@ Note:
 
 ---
 @title[Source Level Debug Features]
-<p align="right"><span class="gold" >Source Level Debug Features</span></p>
+<p align="right"><span class="gold" ><b>Source Level Debug Features</b></span></p>
 <br>
 @ul[no-bullet]
 - <span style="font-size:01.0em" >&nbsp;<span style="background-color: #7030a0"><b>&nbsp;&nbsp;View call stack</b> &nbsp;&nbsp;</b></span><span style="background-color: #92d050"><b>&nbsp;Go&nbsp;</b></span></p>
@@ -483,7 +483,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide35.JPG
 @title[Launching UDK Debugger- Linux udk ]
-<p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
+<p align="right"><span class="gold" ><b>Launching UDK Debugger- Linux </b></span></p>
 <span style="font-size:0.9em" >Example showing Ubuntu 16.04 LTS with GDB </span>
 <br>
 <br>
@@ -507,7 +507,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide36.JPG
 @title[Launching UDK Debugger- Linux gdb]
-<p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
+<p align="right"><span class="gold" ><b>Launching UDK Debugger- Linux </b></span></p>
 <span style="font-size:0.9em" >Example showing Ubuntu 16.04 LTS with GDB </span>
 <br>
 <br>
@@ -537,7 +537,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide37.JPG
 @title[Launching UDK Debugger- Linux -scripts]
-<p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
+<p align="right"><span class="gold" ><b>Launching UDK Debugger- Linux </b></span></p>
 <span style="font-size:0.9em" >Example showing Ubuntu 16.04 LTS with GDB </span>
 <br>
 <br>
@@ -560,7 +560,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide38.JPG
 @title[Launching UDK Debugger- terminal]
-<p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
+<p align="right"><span class="gold" ><b>Launching UDK Debugger- Linux </b></span></p>
 <br>
 <p style="line-height:90%"><span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.7em" ><br> - &nbsp; Example showing "screen" terminal program</span></p>
 <br>
@@ -574,7 +574,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide42.JPG
 @title[UDK Debugger - setting break points]
-<p align="right"><span class="gold" >UDK Debugger - Setting break points</span></p>
+<p align="right"><span class="gold" ><b>UDK Debugger - Setting break points</b></span></p>
 <br>
 <br>
 <div class="left">
@@ -993,7 +993,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide63.JPG
 @title[Debug in Pre-Boot – UEFI Shell]
-<p align="right"><span class="gold" >Debug in Pre-Boot – UEFI Shell Application</span></p>
+<p align="right"><span class="gold" ><b>Debug in Pre-Boot – UEFI Shell Application</b></span></p>
 <span style="font-size:0.8em" >Add `CpuBreakpoint()` to SampleApp.c near the entry point</span>
 <br>
 <br>
@@ -1019,7 +1019,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide64.JPG
 @title[Debug in Pre-Boot – UEFI Shell GDB]
-<p align="right"><span class="gold" >Debug in Pre-Boot – UEFI Shell Application</span></p>
+<p align="right"><span class="gold" ><b>Debug in Pre-Boot – UEFI Shell Application</b></span></p>
 <span style="font-size:0.8em" >Use UDK Debugger and GDB to debug SampleApp</span>
 <br>
 <br>
