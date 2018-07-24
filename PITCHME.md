@@ -70,8 +70,8 @@ Note:
 @ul[no-bullet]
  - @fa[star gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers &<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OpROM</span> 
  - @fa[star gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;Low-cost alternative to ITP/JTAG debug</span> 
- - @fa[star gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Host-to-target connect via COM port or USB debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; port</span> 
- - @fa[star gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Open source based on existing software debuggers <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for Windows & Linux</span>
+ - @fa[star gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Host-to-target connect via COM port or USB debug<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; port</span> 
+ - @fa[star gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Open source based on existing software debuggers <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for Windows & Linux</span>
  - @fa[star gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;User Manual PDF</span>
 @ulend
 
