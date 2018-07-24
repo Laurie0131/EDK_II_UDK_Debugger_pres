@@ -392,7 +392,7 @@ Note:
 @title[Updates to FDF]
 <p align="right"><span class="gold" >Updates to FDF</span></p>
 <br>
-<p style="line-height:70%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.7em" ><br> - this is so there is no conflict with the terminal console driver</span></p>
+<p style="line-height:80%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.7em" ><br> - this is so there is no conflict with the terminal console driver</span></p>
 ```php
 [FV.FVMAIN]
 . . .
