@@ -180,7 +180,7 @@ bash$ sudo apt-get update
 bash$ sudo apt-get install gdb
 ```
 </pre>
-<span style="font-size:0.6em" > Download `gdb` source and compile with Expat library if there is <b>no</b> "`--with-expat`" as on the screen shot here</span>
+<p style="line-height:60%"><span style="font-size:0.6em" > Download `gdb` source and compile with Expat library if there is <font color="yellow"><b>no</b></font> "`--with-expat`" as on the screen shot here</span></p>
 <pre>
 ```
 bash$ ./configure --target=x86_64-w64-mingw32 --with-expat
@@ -225,7 +225,8 @@ bash$ sudo chmod +x UDK_Debugger_Tool_v1_5_1.bin
 bash$ sudo ./UDK_Debugger_Tool_v1_5_1.bin
 ```
 </pre>
-<span style="font-size:0.7em" >The tool will be installed to `/opt/intel/udkdebugger` by default</span>
+<p style="line-height:60%"><span style="font-size:0.7em" >The tool will be installed to `/opt/intel/udkdebugger` by default</span></p>
+<p style="line-height:60%"><span style="font-size:0.7em" >Configuration file:  `/etc/udkdebugger.conf` </span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -253,6 +254,7 @@ Note:
    none
 ```
 </pre>
+<p style="line-height:60%"><span style="font-size:0.7em" >Configuration file:  `/etc/udkdebugger.conf` </span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -390,7 +392,7 @@ Note:
 @title[Updates to FDF]
 <p align="right"><span class="gold" >Updates to FDF</span></p>
 <br>
-<span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.5em" > - this is so there is no conflict with the terminal console driver</span>
+<p style="line-height:60%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.5em" > - this is so there is no conflict with the terminal console driver</span></p>
 ```php
 [FV.FVMAIN]
 . . .
@@ -425,7 +427,7 @@ Note:
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Configure Host - Linux ]
 <p align="right"><span class="gold" >Configure the Host - Linux</span></p>
-<span style="font-size:0.9em" >Menu to configure the tool for the port</span>
+<span style="font-size:0.9em" >Menu to configure the tool for the port on installation</span>
 <br>
 <div class="left1">
 <span style="font-size:0.7em" > Configure Debug Port Menu</span>
@@ -441,6 +443,7 @@ Note:
    none
 ```
 </pre>
+<p style="line-height:60%"><span style="font-size:0.7em" ><font color="yellow">OR</font> update the Configuration file:  `/etc/udkdebugger.conf` </span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -545,7 +548,7 @@ Note:
  (gdb) source ./script/udk_gdb_script
 ```
 </pre>
-<span style="font-size:0.7em" > Symbols will show for PeiCore, also notice the prompt changes from "(gdb)" to "(udb)"</span>
+<p style="line-height:60%"><span style="font-size:0.7em" > Symbols will show for PeiCore, also notice the prompt changes from "(gdb)" to "(udb)"</span></p>
 </div>
 <div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -558,7 +561,7 @@ Note:
 ---?image=/assets/images/slides/Slide38.JPG
 @title[Launching UDK Debugger- terminal]
 <p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
-<span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.5em" >&nbsp; &nbsp; &nbsp; - &nbsp; Example showing "screen" terminal program</span>
+<p style="line-height:60%"><span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.7em" ><br> - &nbsp; Example showing "screen" terminal program</span></p>
 <br>
 
 Note:
