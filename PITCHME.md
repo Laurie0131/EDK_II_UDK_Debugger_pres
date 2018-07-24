@@ -225,8 +225,8 @@ bash$ sudo chmod +x UDK_Debugger_Tool_v1_5_1.bin
 bash$ sudo ./UDK_Debugger_Tool_v1_5_1.bin
 ```
 </pre>
-<p style="line-height:60%"><span style="font-size:0.7em" >The tool will be installed to `/opt/intel/udkdebugger` by default</span></p>
-<p style="line-height:60%"><span style="font-size:0.7em" >Configuration file:  `/etc/udkdebugger.conf` </span></p>
+<p style="line-height:70%"><span style="font-size:0.7em" >The tool will be installed to `/opt/intel/udkdebugger` by default</span></p>
+<p style="line-height:70%"><span style="font-size:0.7em" >Configuration file:  `/etc/udkdebugger.conf` </span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -254,7 +254,7 @@ Note:
    none
 ```
 </pre>
-<p style="line-height:60%"><span style="font-size:0.7em" >Configuration file:  `/etc/udkdebugger.conf` </span></p>
+<p style="line-height:70%"><span style="font-size:0.7em" >Configuration file:  `/etc/udkdebugger.conf` </span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -392,7 +392,7 @@ Note:
 @title[Updates to FDF]
 <p align="right"><span class="gold" >Updates to FDF</span></p>
 <br>
-<p style="line-height:60%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.5em" > - this is so there is no conflict with the terminal console driver</span></p>
+<p style="line-height:60%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.7em" ><br> - this is so there is no conflict with the terminal console driver</span></p>
 ```php
 [FV.FVMAIN]
 . . .
@@ -443,7 +443,7 @@ Note:
    none
 ```
 </pre>
-<p style="line-height:60%"><span style="font-size:0.7em" ><font color="yellow">OR</font> update the Configuration file:  `/etc/udkdebugger.conf` </span></p>
+<p style="line-height:70%"><span style="font-size:0.7em" ><font color="yellow">OR</font> update the Configuration file:  `/etc/udkdebugger.conf` </span></p>
 </div>
 <div class="right1">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -548,7 +548,7 @@ Note:
  (gdb) source ./script/udk_gdb_script
 ```
 </pre>
-<p style="line-height:60%"><span style="font-size:0.7em" > Symbols will show for PeiCore, also notice the prompt changes from "(gdb)" to "(udb)"</span></p>
+<p style="line-height:70%"><span style="font-size:0.7em" > Symbols will show for PeiCore, also notice the prompt changes from "(gdb)" to "(udb)"</span></p>
 </div>
 <div class="right">
 <span style="font-size:0.8em" >&nbsp;  </span>
@@ -561,7 +561,7 @@ Note:
 ---?image=/assets/images/slides/Slide38.JPG
 @title[Launching UDK Debugger- terminal]
 <p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
-<p style="line-height:60%"><span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.7em" ><br> - &nbsp; Example showing "screen" terminal program</span></p>
+<p style="line-height:80%"><span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.7em" ><br> - &nbsp; Example showing "screen" terminal program</span></p>
 <br>
 
 Note:
