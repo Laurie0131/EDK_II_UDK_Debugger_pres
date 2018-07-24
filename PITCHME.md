@@ -392,7 +392,7 @@ Note:
 @title[Updates to FDF]
 <p align="right"><span class="gold" >Updates to FDF</span></p>
 <br>
-<p style="line-height:60%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.7em" ><br> - this is so there is no conflict with the terminal console driver</span></p>
+<p style="line-height:70%"><span style="font-size:0.9em" >Update for the Firmware Volume `FVMAIN`</span><span style="font-size:0.7em" ><br> - this is so there is no conflict with the terminal console driver</span></p>
 ```php
 [FV.FVMAIN]
 . . .
@@ -561,7 +561,8 @@ Note:
 ---?image=/assets/images/slides/Slide38.JPG
 @title[Launching UDK Debugger- terminal]
 <p align="right"><span class="gold" >Launching UDK Debugger- Linux </span></p>
-<p style="line-height:80%"><span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.7em" ><br> - &nbsp; Example showing "screen" terminal program</span></p>
+<br>
+<p style="line-height:90%"><span style="font-size:0.9em" >Optional - open a 3rd Terminal(3) with a terminal program</span><span style="font-size:0.7em" ><br> - &nbsp; Example showing "screen" terminal program</span></p>
 <br>
 
 Note:
