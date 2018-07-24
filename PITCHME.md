@@ -65,7 +65,7 @@ Note:
 ---  
 @title[UDK Debugger Overview]
 <br>
-<p align="center"<span class="gold"   >Intel® UEFI Development Kit Debugger Tool </span></p>
+<p align="center"<span class="gold"   ><b>Intel® UEFI Development Kit Debugger Tool </b></span></p>
 <br>
 @ul[no-bullet]
  - @fa[star gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Source level debug of UEFI firmware, drivers &<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OpROM</span> 
@@ -81,7 +81,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide4.JPG
 @title[UDK Debugger tool block diagram]
-<br>
+
 <p align="center"><span class="gold" ><b>Intel® UEFI Development Kit Debugger Tool</b></span></p>
 
 Note:
@@ -98,7 +98,7 @@ Note:
 
 ---?image=/assets/images/slides/Slide6.JPG
 @title[Host & Target Debug Setup]
-<p align="right"><span class="gold" >Host & Target Debug Setup</span></p>
+<p align="right"><span class="gold" ><b>Host & Target Debug Setup</b></span></p>
 
 Note:
 
