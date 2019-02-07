@@ -282,6 +282,7 @@ Note:
 @snap[north-west span-30  ]
 <br>
 <br>
+<br>
 <p style="line-height:60%" align="left"><span style="font-size:0.7em">
 @size[1.2em](<font color=##87E2A9><b>Serial Null Modem</b></font>)<br>
 <br><br><br><br><br><br>
@@ -294,21 +295,23 @@ Note:
 @snap[north span-30  ]
 <br>
 <br>
+<br>
 <p style="line-height:60%" align="left"><span style="font-size:0.7em">
 @size[1.2em](<font color=##87E2A9><b>&nbsp;&nbsp;USB 2.0 Debug</b></font>)<br>
 <br><br><br><br><br><br>
-&bull;&nbsp;&nbsp;@size[.9em](EHCI debug descriptor &lpar;using NET20DC adapter or AMI Debug Rx device&rpar;)<br>
-&bull;&nbsp;&nbsp;@size[.9em](Target must support USB 2.0 EHCI debug port)<br>
+&bull;&nbsp;&nbsp;@size[.85em](EHCI debug descriptor &lpar;using NET20DC adapter or AMI Debug Rx device&rpar;)<br>
+&bull;&nbsp;&nbsp;@size[.85em](Target must support USB 2.0 EHCI debug port)<br>
 </span></p>
 @snapend
 
-@snap[north-east span-25 ]
+@snap[north-east span-30 ]
+<br>
 <br>
 <br>
 <p style="line-height:60%" align="left"><span style="font-size:0.7em">
-@size[1.2em](<font color=##87E2A9><b>&nbsp;&nbsp;&nbsp;&nbsp;USB 3.0</b></font>)<br>
+@size[1.2em](<font color=##87E2A9><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USB 3.0</b></font>)<br>
 <br><br><br><br><br><br>
-&bull;&nbsp;&nbsp;@size[.9em](Added Release 1.5)<br>
+&nbsp;&nbsp;&bull;&nbsp;&nbsp;@size[.85em](Added Release 1.5)<br>
 </span></p>
 @snapend
 
