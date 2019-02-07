@@ -358,7 +358,7 @@ Note:
 <p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
 
 @snap[north-west span-50 ]
-<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br>
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
 <b>Libraries</b><br>
 &nbsp;</font></span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
@@ -382,7 +382,7 @@ DebugAgentLib<br>
 
 
 @snap[north-east span-55 ]
-<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br>
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
 <b>`SourceLevelDebugPkg`<br>Lib Instance</b>
 &nbsp;
 </font></span></p>
@@ -402,6 +402,19 @@ DebugAgentLib<br>
 </span></p>
 @snapend
 
+
+@snap[north-east span-65  fragment]
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><br><br>
+<br>
+&nbsp;
+</span></p>
+<p style="line-height:60%" align="left"><span style="font-size:0.8em"><br>
+<br>
+COM1&nbsp;&nbsp;<font color="#FFC000">@size[2.5em](&lbrace;)</font><br>
+&nbsp;&nbsp;OR<br>
+USB&nbsp;&nbsp;<br>
+</span></p>
+@snapend
 
 Note:
 
