@@ -389,20 +389,19 @@ DebugAgentLib<br>
 <b>`SourceLevelDebugPkg`<br>Lib Instance</b>
 &nbsp;
 </font></span></p>
-<p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
-PeCoffExtraActionLibDebug.inf<br>
-DebugCommunicationLib<br>
-DebugCommunicationLibSerialPort.inf <br>
-                     or<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " ><br>
+<font color="#d85821">&#10147;</font>&nbsp;&nbsp;PeCoffExtraActionLibDebug.inf<br>
+<font color="#d85821">&#10147;</font>&nbsp;&nbsp;DebugCommunicationLibSerialPort.inf <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Arial">or</font><br>
 DebugCommunicationLibUsb.inf<br>
 <br>
-SecPeiDebugAgentLib.inf<br>
+<font color="#d85821">&#10147;</font>&nbsp;&nbsp;SecPeiDebugAgentLib.inf<br>
 <br>
 <br>
-DxeDebugAgentLib.inf<br>
+<font color="#d85821">&#10147;</font>&nbsp;&nbsp;DxeDebugAgentLib.inf<br>
 <br>
 <br>
-SmmDebugAgentLib.inf
+<font color="#d85821">&#10147;</font>&nbsp;&nbsp;SmmDebugAgentLib.inf
 </span></p>
 @snapend
 
