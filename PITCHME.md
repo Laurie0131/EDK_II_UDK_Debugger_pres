@@ -682,7 +682,7 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug fa-3x gp-bullet-red]</span></p>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >@color[red](@fa[bug fa-3x ])</span></p>
 @snapend
 
 
