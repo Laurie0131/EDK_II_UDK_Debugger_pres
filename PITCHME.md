@@ -628,29 +628,16 @@ Note:
 </p>
 @snapend
 
-@snap[north-west span-15 fragment]
+@snap[north span-15 fragment]
 <br>
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![DebugBUG](/assets/images/DebugBUG.png)
-</p>
+![DebugBUG](/assets/images/DebugBUG.png)&nbsp;&nbsp;&nbsp;
 @snapend
 
 
 
-@snap[north-west span-15 fragment]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![DebugBUG](/assets/images/DebugBUG.png)
-</p>
-@snapend
 
 @snap[north-east span-15 fragment]
 <br>
@@ -660,7 +647,7 @@ Note:
 <br>
 <br>
 <br>
-![DebugBUG](/assets/images/DebugBUG.png)
+![DebugBUG](/assets/images/DebugBUG.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 @snapend
 
 
