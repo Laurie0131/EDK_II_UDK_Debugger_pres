@@ -358,8 +358,7 @@ Note:
 <p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
 
 @snap[north-west span-50 ]
-<br>
-<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br>
 <b>Libraries</b><br>
 &nbsp;</font></span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
@@ -367,7 +366,6 @@ Note:
 PeCoffExtraActionLib<br>&nbsp;&nbsp;
 DebugCommunicationLib<br>
 <br> 
-<br>
 <br>
 [LibraryClasses.IA32] <font face="Arial"><b>SEC / PEI</b></font><br>&nbsp;&nbsp;
 DebugAgentLib<br>
@@ -384,25 +382,23 @@ DebugAgentLib<br>
 
 
 @snap[north-east span-55 ]
-<br>
-<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br>
 <b>`SourceLevelDebugPkg`<br>Lib Instance</b>
 &nbsp;
 </font></span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " ><br>
-<font color="#FFC000">@size[1.2em](&#10147;)</font>&nbsp;&nbsp;PeCoffExtraActionLibDebug.inf<br>
-<font color="#FFC000">@size[1.2em](&#10147;)</font>&nbsp;&nbsp;DebugCommunicationLibSerialPort.inf <br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;PeCoffExtraActionLibDebug.inf<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;DebugCommunicationLibSerialPort.inf <br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Arial">or</font><br>
-<font color="#FFC000">@size[1.2em](&#10147;)</font>&nbsp;&nbsp;DebugCommunicationLibUsb.inf<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;DebugCommunicationLibUsb.inf<br>
+<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;SecPeiDebugAgentLib.inf<br>
 <br>
 <br>
-<font color="#FFC000">@size[1.2em](&#10147;)</font>&nbsp;&nbsp;SecPeiDebugAgentLib.inf<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;DxeDebugAgentLib.inf<br>
 <br>
 <br>
-<font color="#FFC000">@size[1.2em](&#10147;)</font>&nbsp;&nbsp;DxeDebugAgentLib.inf<br>
-<br>
-<br>
-<font color="#FFC000">@size[1.2em](&#10147;)</font>&nbsp;&nbsp;SmmDebugAgentLib.inf
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;SmmDebugAgentLib.inf
 </span></p>
 @snapend
 
