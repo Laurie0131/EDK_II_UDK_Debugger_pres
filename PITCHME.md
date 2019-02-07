@@ -1402,10 +1402,13 @@ Note:
 @title[Set a Break Point from the Call Stack]
 <br>
 <p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
-<br>
+
 @snap[north-west span-30]
 <br>
 <br>
+<br>
+<br>
+
 <p style="line-height:60%" align="left"><span style="font-size:0.60em; " >
 &bull;&nbsp;Click on desired location in the Call Stack<br>
 &bull;&nbsp;Select w/ Cntl-C (copy)<br>
@@ -1419,28 +1422,32 @@ Note:
 @snap[north-west span-30 fragment]
 <br>
 <br>
+<br>
+<br>
 <p style="line-height:60%" align="left"><span style="font-size:0.60em; " >
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
-<br>
-<br>
+&nbsp;<br>
+&nbsp;<br>
 &bull;&nbsp;Press "F5" to GO
 </span></p>
 @snapend
 
-@snap[north-east span-30 fragment]
+@snap[north-east span-70 fragment]
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.60em; " >
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-&nbsp;<br>
-@size[.7em](`0 e fffd2459 [l:\lr\mdemodulekg\core\pei\dispatcher\dispatch `)<br>
 <br>
-&bull;&nbsp;Press "F5" to GO
+<br>
+<br>
+<p style="line-height:30%" align="left"><span style="font-size:0.60em; " >
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<font color="black">@size[.5em](`0 e fffd2459 [l:\lr\mdemodulekg\core\pei\dispatcher\dispatch `)</font><br>
+<br>
 </span></p>
 @snapend
 
