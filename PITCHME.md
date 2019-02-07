@@ -1410,11 +1410,11 @@ Note:
 <br>
 
 <p style="line-height:60%" align="left"><span style="font-size:0.60em; " >
-&bull;&nbsp;Click on desired location in the Call Stack<br>
+&bull;&nbsp;Click on desired location in the <br>&nbsp;&nbsp;Call Stack<br>
 &bull;&nbsp;Select w/ Cntl-C (copy)<br>
 &bull;&nbsp;Alt+F9 - Breakpoints menu<br>
 &bull;&nbsp;Add "bp" command <br>
-&bull;&nbsp;And Cntl-v to (paste) from Call Stack reference <br>
+&bull;&nbsp;And Cntl-v to (paste) from Call <br>&nbsp;&nbsp;Stack reference <br>
 &bull;&nbsp;Click "OK"<br>
 </span></p>
 @snapend
@@ -1430,7 +1430,7 @@ Note:
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;<br><br><br><br>
+&nbsp;<br><br><br>
 &bull;&nbsp;Press "F5" to GO
 </span></p>
 @snapend
@@ -1446,7 +1446,7 @@ Note:
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br><br><br><br><br><br>
-<font color="black">@size[.5em](`0 e fffd2459 [l:\lr\mdemodulekg\core\pei\dispatcher\dispatch `)</font><br>
+<font color="black">@size[.55em](<b>`0 e fffd2459 [l:\lr\mdemodulekg\core\pei\dispatcher\dispatch `</b>)</font><br>
 <br>
 </span></p>
 @snapend
