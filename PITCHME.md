@@ -620,23 +620,39 @@ Note:
 @title[Debugging the Boot Phases]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases</b></span></p>
 
-@snap[north-west span-20 fragment]
+@snap[north-west span-15 fragment]
 <br>
 <br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >
 ![DebugBUG](/assets/images/DebugBUG.png)
+</p>
 @snapend
 
-@snap[north span-20 fragment]
+@snap[north-west span-15 fragment]
 <br>
 <br>
 <br>
 <br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![DebugBUG](/assets/images/DebugBUG.png)
+</p>
 @snapend
 
 
 
-@snap[north-east span-20 fragment]
+@snap[north-west span-15 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![DebugBUG](/assets/images/DebugBUG.png)
+</p>
+@snapend
+
+@snap[north-east span-15 fragment]
 <br>
 <br>
 <br>
