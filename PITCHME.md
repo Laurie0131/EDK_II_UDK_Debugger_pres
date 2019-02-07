@@ -368,18 +368,18 @@ Note:
 <b>Libraries</b><br>
 &nbsp;</font></span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
-[LibraryClasess]  <font face="Arial"><b>General</b></font><br>&nbsp;&nbsp;
-PeCoffExtraActionLib<br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasess]  <font face="Arial"><b>General</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
+PeCoffExtraActionLib<br>&nbsp;&nbsp;&nbsp;&nbsp;
 DebugCommunicationLib<br>
 <br> 
 <br>
-[LibraryClasses.IA32] <font face="Arial"><b>SEC / PEI</b></font><br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasses.IA32] <font face="Arial"><b>SEC / PEI</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
 DebugAgentLib<br>
 <br>
-[LibraryClasses.X64] <font face="Arial"><b>DXE</b></font><br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasses.X64] <font face="Arial"><b>DXE</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
 DebugAgentLib<br>
 <br>
-[LibraryClasses.X64.DXE_SMM_DRIVER] <font face="Arial"><b>SMM</b></font><br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasses.X64.DXE_SMM_DRIVER] <font face="Arial"><b>SMM</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
 DebugAgentLib<br>
 <br>
 </span></p>
@@ -483,19 +483,19 @@ Note:
 <b>Libraries</b><br>
 &nbsp;</font></span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
-[LibraryClasess]  <font face="Arial"><b>General</b></font><br>&nbsp;&nbsp;
-PeCoffExtraActionLib<br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasess]  <font face="Arial"><b>General</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
+PeCoffExtraActionLib<br>&nbsp;&nbsp;&nbsp;&nbsp;
 <br>
-[LibraryClasses.IA32] <font face="Arial"><b>SEC / PEI</b></font><br>&nbsp;&nbsp;
-DebugCommunicationLib<br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasses.IA32] <font face="Arial"><b>SEC / PEI</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
+DebugCommunicationLib<br>&nbsp;&nbsp;&nbsp;&nbsp;
 DebugAgentLib<br>
 <br>
-[LibraryClasses.X64] <font face="Arial"><b>DXE</b></font><br>&nbsp;&nbsp;
-DebugCommunicationLib<br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasses.X64] <font face="Arial"><b>DXE</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
+DebugCommunicationLib<br>&nbsp;&nbsp;&nbsp;&nbsp;
 DebugAgentLib<br>
 <br>
-[LibraryClasses.X64.DXE_SMM_DRIVER] <font face="Arial"><b>SMM</b></font><br>&nbsp;&nbsp;
-DebugCommunicationLib<br>&nbsp;&nbsp;
+&nbsp;&nbsp;[LibraryClasses.X64.DXE_SMM_DRIVER] <font face="Arial"><b>SMM</b></font><br>&nbsp;&nbsp;&nbsp;&nbsp;
+DebugCommunicationLib<br>&nbsp;&nbsp;&nbsp;&nbsp;
 DebugAgentLib<br>
 <br>
 </span></p>
