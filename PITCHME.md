@@ -433,150 +433,107 @@ DebugAgentLib<br>
 
 Note:
 
-  LAURIE FIX
+ 
+
+#### Library class sections
+<pre class='bash'>
+ [LibraryClasess]  General
+  PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
+
+ DebugCommunicationLib
+   DebugCommunicationLibSerialPort.inf
+     or
+   DebugCommunicationLibUsb.inf
+
+ [LibraryClasses.IA32] SEC/PEI
+  DebugAgentLib SecPeiDebugAgentLib.inf
+
+ [LibraryClasses.X64] DXE
+  DebugAgentLib DxeDebugAgentLib.inf
+
+ [LibraryClasses.X64.DXE_SMM_DRIVER] SMM
+  DebugAgentLib SmmDebugAgentLib.inf
+</pre>
+
 
 
 ---
-@title[Updates to DSC]
-<p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
-@snap[north-east span-50 ]
+@title[Updates to DSC USB 3.0]
+<p align="right"><span class="gold" ><b>Updates to DSC for USB 3.0</b></span></p>
+
+
+@snap[north-west span-50 ]
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+<b>Libraries</b><br>
+&nbsp;</font></span></p>
+<p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
+[LibraryClasess]  <font face="Arial"><b>General</b></font><br>&nbsp;&nbsp;
+PeCoffExtraActionLib<br>&nbsp;&nbsp;
 <br>
-<p style="line-height:60%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+[LibraryClasses.IA32] <font face="Arial"><b>SEC / PEI</b></font><br>&nbsp;&nbsp;
+DebugCommunicationLib<br>&nbsp;&nbsp;
+DebugAgentLib<br>
+<br>
+[LibraryClasses.X64] <font face="Arial"><b>DXE</b></font><br>&nbsp;&nbsp;
+DebugCommunicationLib<br>&nbsp;&nbsp;
+DebugAgentLib<br>
+<br>
+[LibraryClasses.X64.DXE_SMM_DRIVER] <font face="Arial"><b>SMM</b></font><br>&nbsp;&nbsp;
+DebugCommunicationLib<br>&nbsp;&nbsp;
+DebugAgentLib<br>
+<br>
+</span></p>
+@snapend
+
+
+
+@snap[north-east span-55 ]
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
 <b>`SourceLevelDebugPkg`<br>Lib Instance</b>
 &nbsp;
 </font></span></p>
-@snapend
-
-@snap[north-west span-100 ]
+<p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " ><br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;PeCoffExtraActionLibDebug.inf<br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
-<b>Libraries</b>
-&nbsp;</font></span></p>
-
-
-
-
-
-<table id="recTable">
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess] <font face="Arial"><b>General</b></font></span></p></td>
-		
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >PeCoffExtraActionLib</span></p></td>
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >PeCoffExtraActionLibDebug.inf</span></p></td>
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugCommunicationLib</span></p></td>
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugCommunicationLibSerialPort.inf<font face="Arial"><b>OR</b></font><br>DebugCommunicationLibUsb.inf </span></p></td>
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess.IA32 <font face="Arial"><b>SEC / PEI</b></font></span></p></td>
-		
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugAgentLib</span></p></td>
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >SecPeiDebugAgentLib.inf</span></p></td>
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess.X64] <font face="Arial"><b>DXE</b></font></span></p></td>
-		
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugAgentLib</span></p></td>
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DxeDebugAgentLib.inf</span></p></td>
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess.X64.DXE_SMM] <font face="Arial"><b>SMM</b></font></span></p></td>
-		
-	</tr>
-	<tr> 
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugAgentLib</span></p></td>
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >SmmDebugAgentLib.inf</span></p></td>
-	</tr>
-
-</table>
-
+<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;DebugCommunicationLibUsb3Pei.inf<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;SecPeiDebugAgentLib.inf<br>
+<br>
+<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;DebugCommunicationLibUsb3Dxe.inf<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;DxeDebugAgentLib.inf<br>
+<br>
+<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;DebugCommunicationLibUsb3Dxe.inf<br>
+<font color="#FFC000">@size[1.5em](&#10147;)</font>&nbsp;&nbsp;SmmDebugAgentLib.inf
+</span></p>
 @snapend
 
+
+
+
+
 Note:
 
-#### Library class sections
+#### Library class sections for USB 3.0
 <pre class='bash'>
  [LibraryClasess]  General
   PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
 
- DebugCommunicationLib
-   DebugCommunicationLibSerialPort.inf
-     or
-   DebugCommunicationLibUsb.inf
-
  [LibraryClasses.IA32] SEC/PEI
   DebugAgentLib SecPeiDebugAgentLib.inf
+  DebugCommunicationLib DebugCommunicationLibUsb3Pei.inf
 
  [LibraryClasses.X64] DXE
   DebugAgentLib DxeDebugAgentLib.inf
+  DebugCommunicationLib DebugCommunicationLibUsb3Dxe.inf
 
  [LibraryClasses.X64.DXE_SMM_DRIVER] SMM
   DebugAgentLib SmmDebugAgentLib.inf
+  DebugCommunicationLib DebugCommunicationLibUsb3Dxe.inf
 </pre>
 
 
----?image=/assets/images/slides/Slide23.JPG
-<!-- .slide: data-transition="none" -->
-@title[Updates to DSC]
-<p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
-
-Note:
-
-#### Library class sections
-<pre class='bash'>
- [LibraryClasess]  General
-  PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
-
- DebugCommunicationLib
-   DebugCommunicationLibSerialPort.inf
-     or
-   DebugCommunicationLibUsb.inf
-
- [LibraryClasses.IA32] SEC/PEI
-  DebugAgentLib SecPeiDebugAgentLib.inf
-
- [LibraryClasses.X64] DXE
-  DebugAgentLib DxeDebugAgentLib.inf
-
- [LibraryClasses.X64.DXE_SMM_DRIVER] SMM
-  DebugAgentLib SmmDebugAgentLib.inf
-</pre>
-
-
-+++?image=/assets/images/slides/Slide24.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Updates to DSC 02]
-<p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
-
-Note:
-
-#### Library class sections
-<pre class='bash'>
- [LibraryClasess]  General
-  PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
-
- DebugCommunicationLib
-   DebugCommunicationLibSerialPort.inf
-     or
-   DebugCommunicationLibUsb.inf
-
- [LibraryClasses.IA32] SEC/PEI
-  DebugAgentLib SecPeiDebugAgentLib.inf
-
- [LibraryClasses.X64] DXE
-  DebugAgentLib DxeDebugAgentLib.inf
-
- [LibraryClasses.X64.DXE_SMM_DRIVER] SMM
-  DebugAgentLib SmmDebugAgentLib.inf
-</pre>
 
 
 ---?image=/assets/images/slides/Slide26.JPG
