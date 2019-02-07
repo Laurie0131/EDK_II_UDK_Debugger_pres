@@ -612,7 +612,38 @@ Note:
 
 Note:
 
+---?image=/assets/images/slides2/Slide30.JPG
+@title[Debugging the Boot Phases]
+<p align="center"><span class="gold" ><b>Debugging the Boot Phases</b></span></p>
 
+@snap[north-west span-30 fragment]
+<br>
+![DebugBUG](/assets/images/DebugBUG.png)
+@snapend
+
+@snap[north span-30 fragment]
+<br>
+<br>
+<br>
+<br>
+![DebugBUG](/assets/images/DebugBUG.png)
+@snapend
+
+
+
+@snap[north-east span-30 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+![DebugBUG](/assets/images/DebugBUG.png)
+@snapend
+
+
+Note:
 ---?image=/assets/images/slides/Slide43.JPG
 <!-- .slide: data-transition="none" -->
 @title[Debugging the Boot Phases]
