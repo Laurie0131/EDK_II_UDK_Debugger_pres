@@ -552,31 +552,6 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide26.JPG
-@title[Updates to DSC USB 3.0]
-<p align="right"><span class="gold" ><b>Updates to DSC for USB 3.0</b></span></p>
-
-Note:
-
-#### Library class sections for USB 3.0
-<pre class='bash'>
- [LibraryClasess]  General
-  PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
-
- [LibraryClasses.IA32] SEC/PEI
-  DebugAgentLib SecPeiDebugAgentLib.inf
-  DebugCommunicationLib DebugCommunicationLibUsb3Pei.inf
-
- [LibraryClasses.X64] DXE
-  DebugAgentLib DxeDebugAgentLib.inf
-  DebugCommunicationLib DebugCommunicationLibUsb3Dxe.inf
-
- [LibraryClasses.X64.DXE_SMM_DRIVER] SMM
-  DebugAgentLib SmmDebugAgentLib.inf
-  DebugCommunicationLib DebugCommunicationLibUsb3Dxe.inf
-</pre>
-
-
 ---
 @title[Updates to FDF]
 <p align="right"><span class="gold" ><b>Updates to FDF</b></span></p>
