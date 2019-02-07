@@ -1430,12 +1430,12 @@ Note:
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;<br>
+&nbsp;<br><br><br><br>
 &bull;&nbsp;Press "F5" to GO
 </span></p>
 @snapend
 
-@snap[north-east span-70 fragment]
+@snap[north-east span-60 fragment]
 <br>
 <br>
 <br>
@@ -1445,7 +1445,7 @@ Note:
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;<br>
+&nbsp;<br><br><br><br>
 <font color="black">@size[.5em](`0 e fffd2459 [l:\lr\mdemodulekg\core\pei\dispatcher\dispatch `)</font><br>
 <br>
 </span></p>
