@@ -79,10 +79,14 @@ Note:
 Note:
 
 
----?image=/assets/images/slides/Slide4.JPG
+---?image=/assets/images/slides2/Slide5.JPG
 @title[UDK Debugger tool block diagram]
 
 <p align="center"><span class="gold" ><b>Intel® UEFI Development Kit Debugger Tool</b></span></p>
+
+@snap[south span-95  fragment]
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:60%"><span style="font-size:0.9em">Source Level Debugger for UEFI<br>&nbsp;</span></p>)
+@snapend
 
 Note:
 
@@ -96,9 +100,16 @@ Note:
 ### Source Level Debugger for UEFI - EDK II
 
 
----?image=/assets/images/slides/Slide6.JPG
+---?image=/assets/images/slides2/Slide6.JPG
 @title[Host & Target Debug Setup]
 <p align="right"><span class="gold" ><b>Host & Target Debug Setup</b></span></p>
+@snap[north span-35  ]
+<br>
+<br>
+<p style="line-height:60%" align="center"><span style="font-size:0.9em">
+Null Modem Cable or<br> USB 2.0 Debug or USB 3.0 Cable
+</span></p>
+@snapend
 
 Note:
 
@@ -127,7 +138,7 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide10.JPG
+---?image=/assets/images/slides2/Slide8.JPG
 @title[Host Configuration Requirements - Windows ]
 <p align="right"><span class="gold" ><b>Host Configuration Requirements </b></span></p>
 <br>
@@ -147,7 +158,7 @@ Note:
 - May need to search for the version of WinDBG
 
 
----?image=/assets/images/slides/Slide11.JPG
+---?image=/assets/images/slides2/Slide9.JPG
 @title[Host Configuration Requirements - Linux ]
 <p align="right"><span class="gold" ><b>Host Configuration Requirements </b></span></p>
 <br>
@@ -168,20 +179,20 @@ Note:
 @title[Host Configuration Requirements - Linux GDB ]
 <p align="right"><span class="gold" ><b>Host Configuration Requirements -GDB </b></span></p>
 <span style="font-size:0.9em" >Check for the configuration of GDB that is installed  </span>
-```
+```bash
 bash$ gdb --configuration
 ```
 
 <div class="left">
 <span style="font-size:0.7em" > Install `gdb` if not installed</span>
-<pre>
+<pre class='bash'>
 ```
 bash$ sudo apt-get update
 bash$ sudo apt-get install gdb
 ```
 </pre>
 <p style="line-height:60%"><span style="font-size:0.6em" > Download `gdb` source and compile with Expat library if there is <font color="yellow"><b>no</b></font> "`--with-expat`" as on the screen shot here</span></p>
-<pre>
+<pre class='bash'>
 ```
 bash$ ./configure --target=x86_64-w64-mingw32 --with-expat
 bash$ make
@@ -217,7 +228,7 @@ Note:
 <br>
 <div class="left1">
 <span style="font-size:0.7em" > Extract the .zip file to a temp directory</span>
-<pre>
+<pre class='bash'>
 ```
 bash$ cd <temp-directory>
 bash$ sudo chmod +x UDK_Debugger_Tool_v1_5_1.bin
@@ -242,7 +253,7 @@ Note:
 <br>
 <div class="left1">
 <span style="font-size:0.7em" > Configure Debug Port Menu</span>
-<pre>
+<pre class='bash'>
 ```
  // Debug Port Channel
    Serial or USB
@@ -264,10 +275,42 @@ Note:
 Note:
 
 
----?image=/assets/images/slides/Slide17.JPG
+---?image=/assets/images/slides2/Slide13.JPG
 @title[Debug Cable Options]
 <p align="right"><span class="gold" ><b>Debug Cable Options</b></span></p>
 
+@snap[north-east span-35  ]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.9em">
+@size[1.2em](<font color=##87E2A9><b>Serial Null Modem</b></font>)<br>
+<br><br><br><br><br><br>
+&bull;Target must support standard RS-232 COM port<br>
+&bull;Host can support standard RS-232 or USB COM port<br>
+&bull;Supported by Windows & Linux<br>
+</span></p>
+@snapend
+
+@snap[north span-35  ]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.9em">
+@size[1.2em](<font color=##87E2A9><b>USB 2.0 Debug</b></font>)<br>
+<br><br><br><br><br><br>
+&bull;EHCI debug descriptor &lpar;using NET20DC adapter or AMI Debug Rx device&rpar;<br>
+&bull;Target must support USB 2.0 EHCI debug port<br>
+</span></p>
+@snapend
+
+@snap[north-east span-35  ]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.9em">
+@size[1.2em](<font color=##87E2A9><b>USB 3.0</b></font>)<br>
+<br><br><br><br><br><br>
+&bull;Added Release 1.5<br>
+</span></p>
+@snapend
 
 Note:
 
@@ -314,7 +357,7 @@ Note:
 Note:
 
 #### Library class sections
-<pre>
+<pre class='bash'>
  [LibraryClasess]  General
   PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
 
@@ -343,7 +386,7 @@ Note:
 Note:
 
 #### Library class sections
-<pre>
+<pre class='bash'>
  [LibraryClasess]  General
   PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
 
@@ -370,7 +413,7 @@ Note:
 Note:
 
 #### Library class sections for USB 3.0
-<pre>
+<pre class='bash'>
  [LibraryClasess]  General
   PeCoffExtraActionLib PeCoffExtraActionLibDebug.inf
 
@@ -431,7 +474,7 @@ Note:
 <br>
 <div class="left1">
 <span style="font-size:0.7em" > Configure Debug Port Menu</span>
-<pre>
+<pre class='bash'>
 ```
  // Debug Port Channel
    Serial or USB
@@ -490,7 +533,7 @@ Note:
 <div class="left">
 <span style="font-size:0.7em" > Need to open 3 Terminal prompt windows<br>First Terminal(1) is the UDK debugger server </span>
 
-<pre>
+<pre class='bash'>
 ```
  bash$ cd opt/intel/udkdebugger
  bash$ ./bin/udk-gdb-server
@@ -513,14 +556,14 @@ Note:
 <br>
 <div class="left">
 <span style="font-size:0.7em" > Open a second  Terminal(2) for GDB </span>
-<pre>
+<pre class='bash'>
 ```
  bash$ cd opt/intel/udkdebugger
  bash$ gdb
 ```
 </pre>
 <span style="font-size:0.7em" > Attach to the UDK debugger</span>
-<pre>
+<pre class='bash'>
 ```
  (gdb) target remote <HOST>:1234
 ```
@@ -543,7 +586,7 @@ Note:
 <br>
 <div class="left">
 <span style="font-size:0.7em" > Open the udk scripts in  GDB - Terminal(2) </span>
-<pre>
+<pre class='bash'>
 ```
  (gdb) source ./script/udk_gdb_script
 ```
@@ -579,19 +622,19 @@ Note:
 <br>
 <div class="left">
 <span style="font-size:0.7em" >Terminal(2) Breakpoint at PeiDispatcher </span>
-<pre>
+<pre class='bash'>
 ```
  (udb) b PeiDispatcher
 ```
 </pre>
 <span style="font-size:0.7em" > Break at Port 0x80</span>
-<pre>
+<pre class='bash'>
 ```
  (udb)iowatch/b 0x80
 ```
 </pre>
 <span style="font-size:0.7em" > Break at absolute address</span>
-<pre>
+<pre class='bash'>
 ```
  (udb)b *0xfff94a68
 ```
@@ -655,7 +698,6 @@ Note:
 
 
 ---?image=/assets/images/slides/Slide48.JPG
-<!-- .slide: data-background-transition="none" -->
 @title[Debugging the Boot Phases SEC]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases - SEC</b></span></p>
 
@@ -679,23 +721,6 @@ Note:
 
 Note:
 
-+++?image=/assets/images/slides/Slide49.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Debugging the Boot Phases SEC 02]
-<p align="center"><span class="gold" ><b>Debugging the Boot Phases - SEC</b></span></p>
-<div class="left-2">
-<span style="font-size:0.8em" >&nbsp;  </span>
-</div>
-<div class="right-2">
-<span style="font-size:0.8em" >Debugging Sec phase</span>
-<br>
-<br>
-<span style="font-size:0.9em" ><font color="yellow">SORRY</font> - Requires a hardware debugger</span>
-</div>
-
-
-Note:
 
 SEC Must use hardware debugger, not Intel® UEFI Development Kit Debugger
 
@@ -1008,7 +1033,7 @@ Note:
 <br>
 <div class="left">
 <span style="font-size:0.7em" >Add SampleApp.inf to the platform .dsc file</span>
-<pre>
+<pre class='bash'>
 ```
 bash$ cd <edk2 workspace directory>
 bash$ . edksetup.sh
@@ -1034,7 +1059,7 @@ Note:
 <br>
 <div class="left">
 <span style="font-size:0.7em" >At the shell prompt on the target invoke SampleApp</span>
-<pre>
+<pre class='bash'>
 ```
 Shell> Fs0:
 FS0:/> SampleApp
@@ -1043,7 +1068,7 @@ FS0:/> SampleApp
 
 <span style="font-size:0.7em" >GDB will break at the CpuBreakpoint</span><br>
 <span style="font-size:0.7em" >Begin debugging SampleApp </span><br>
-<pre>
+<pre class='bash'>
 ```
 (udb) layout src
 (udb) info locals
