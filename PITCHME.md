@@ -698,6 +698,18 @@ Note:
 @snapend
 
 
+@snap[north-east span-40 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >@color[red](@fa[bug fa-3x ])</span></p>
+@snapend
+
 ---?image=/assets/images/slides/Slide43.JPG
 <!-- .slide: data-transition="none" -->
 @title[Debugging the Boot Phases]
