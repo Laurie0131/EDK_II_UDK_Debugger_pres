@@ -682,7 +682,7 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug fa-2x gp-bullet-yellow]</span></p>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug fa-2x gp-bullet-red]</span></p>
 @snapend
 
 
@@ -690,7 +690,11 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug fa-2x gp-bullet-blue]</span></p>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug fa-2x gp-bullet-purple]</span></p>
 @snapend
 
 
