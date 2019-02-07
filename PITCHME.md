@@ -352,6 +352,69 @@ Note:
 - Add call to new library class (DebugAgentLib) One in SEC, one in DXE Main, one in SMM CPU Module
 - Or if you don’t want to add one A NULL implementation of DebugAgentLib will be checked into open source so all modules can build with debug feature disabled
 
+
+---
+@title[Updates to DSC]
+<p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
+
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+<b>Libraries</b>
+&nbsp;</font></span></p>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
+[LibraryClasess]  <font face="Arial"><b>General</b></font><br>&nbsp;&nbsp;
+PeCoffExtraActionLib<br>&nbsp;&nbsp;
+DebugCommunicationLib<br>
+<br> 
+<br>
+<br>
+[LibraryClasses.IA32] <font face="Arial"><b>SEC / PEI</b></font><br>&nbsp;&nbsp;
+DebugAgentLib<br>
+<br>
+[LibraryClasses.X64] <font face="Arial"><b>DXE</b></font><br>&nbsp;&nbsp;
+DebugAgentLib<br>
+<br>
+[LibraryClasses.X64.DXE_SMM_DRIVER] <font face="Arial"><b>SMM</b></font><br>&nbsp;&nbsp;
+DebugAgentLib<br>
+<br>
+</span></p>
+@snapend
+
+
+
+@snap[north-east span-50 ]
+<br>
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+<b>`SourceLevelDebugPkg`<br>Lib Instance</b>
+&nbsp;
+</font></span></p>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
+<br>&nbsp;&nbsp;
+PeCoffExtraActionLibDebug.inf<br>&nbsp;&nbsp;
+DebugCommunicationLib<br>
+DebugCommunicationLibSerialPort.inf <br>
+                     or<br>
+DebugCommunicationLibUsb.inf<br>
+<br>&nbsp;&nbsp;
+SecPeiDebugAgentLib.inf<br>
+<br>
+<br>&nbsp;&nbsp;
+DxeDebugAgentLib.inf<br>
+<br>
+<br>&nbsp;&nbsp;
+SmmDebugAgentLib.inf
+</span></p>
+@snapend
+
+
+Note:
+
+  LAURIE FIX
+
+
 ---
 @title[Updates to DSC]
 <p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
@@ -368,6 +431,10 @@ Note:
 <p style="line-height:60%" align="left"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
 <b>Libraries</b>
 &nbsp;</font></span></p>
+
+
+
+
 
 <table id="recTable">
 	<tr> 
