@@ -1462,23 +1462,6 @@ Note:
 
 
 
-+++?image=/assets/images/slides/Slide84.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Set a Break Point from the Call Stack]
-<br>
-<p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
-<br>
-
-Note:
-
-1. Click on desired location in the Call Stack
-2. Select w/ Cntl-C (copy)
-3. Alt+F9 – Breakpoints menu
-4. Add “bp” command  and Cntl-v to (paste) from Call Stack reference 
-6. Click “OK” 	
-7. Press “F5” to Go
-
 
 ---?image=/assets/images/slides/Slide86.JPG
 @title[Next “Go” will break in Pei Dispatcher.c]
