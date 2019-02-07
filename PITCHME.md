@@ -408,7 +408,7 @@ DebugAgentLib<br>
 <br>
 &nbsp;
 </span></p>
-<p style="line-height:50%" align="left"><span style="font-size:0.5em"><br><br>
+<p style="line-height:50%" align="left"><span style="font-size:0.5em"><br>
 <br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">@size[4.5em](&lbrace;)</font><br>
@@ -425,9 +425,9 @@ DebugAgentLib<br>
 </span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.5em"><br>
 <br><font color="yellow">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COM1&nbsp;&nbsp;</font><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OR<br><font color="yellow">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USB&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COM1&nbsp;&nbsp;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OR<br><font color="yellow">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USB&nbsp;&nbsp;<br>
 </font></span></p>
 @snapend
 
