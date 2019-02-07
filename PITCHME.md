@@ -410,7 +410,21 @@ DebugAgentLib<br>
 </span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.8em"><br>
 <br>
-COM1&nbsp;&nbsp;<font color="#FFC000">@size[2.5em](&lbrace;)</font><br>
+<font color="#FFC000">@size[2.5em](&lbrace;)</font><br>
+<br>
+<br>
+</span></p>
+@snapend
+
+
+@snap[north-east span-70  fragment]
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><br><br>
+<br>
+&nbsp;
+</span></p>
+<p style="line-height:60%" align="left"><span style="font-size:0.75em"><br>
+<br>
+COM1&nbsp;&nbsp;</font><br>
 &nbsp;&nbsp;OR<br>
 USB&nbsp;&nbsp;<br>
 </span></p>
