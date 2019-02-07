@@ -284,6 +284,12 @@ span.aside {
 }
 
 
+.gp-bullet-red{ 
+  color:#A20000;
+  margin-left: 10px; 
+}
+
+
 h6 {
     font-weight: bold;
     font-size: 50%;
