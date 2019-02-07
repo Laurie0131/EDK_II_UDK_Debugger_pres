@@ -359,7 +359,7 @@ Note:
 
 @snap[north-west span-100 ]
 <p style="line-height:70%" align="center"><span style="font-size:0.8em"><br><br><br>&nbsp;</span></p>
-@box[bg-grey-15 text-white rounded my-box-pad2  ](<p style="line-height:60%" align="left"><span style="font-size:0.8em"><br><br><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
+@box[bg-grey-15 text-white rounded my-box-pad2  ](<p style="line-height:60%" align="left"><span style="font-size:0.8em"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
 @snapend
 
 
@@ -473,6 +473,10 @@ Note:
 @title[Updates to DSC USB 3.0]
 <p align="right"><span class="gold" ><b>Updates to DSC for USB 3.0</b></span></p>
 
+@snap[north-west span-100 ]
+<p style="line-height:70%" align="center"><span style="font-size:0.8em"><br><br><br>&nbsp;</span></p>
+@box[bg-grey-15 text-white rounded my-box-pad2  ](<p style="line-height:60%" align="left"><span style="font-size:0.8em"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
+@snapend
 
 @snap[north-west span-50 ]
 <p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
