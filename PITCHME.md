@@ -355,7 +355,61 @@ Note:
 ---
 @title[Updates to DSC]
 <p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
+@snap[north-east span-50 ]
+<br>
+<p style="line-height:60%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+<b>`SourceLevelDebugPkg`<br>Lib Instance</b>
+&nbsp;
+</font></span></p>
+@snapend
 
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
+<b>Libraries</b>
+&nbsp;</font></span></p>
+
+<table id="recTable">
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess] <font face="Arial"><b>General</b></font></span></p></td>
+		
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >PeCoffExtraActionLib</span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >PeCoffExtraActionLibDebug.inf</span></p></td>
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugCommunicationLib</span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugCommunicationLibSerialPort.inf<font face="Arial"><b>OR</b></font><br>DebugCommunicationLibUsb.inf </span></p></td>
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess.IA32 <font face="Arial"><b>SEC / PEI</b></font></span></p></td>
+		
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugAgentLib</span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >SecPeiDebugAgentLib.inf</span></p></td>
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess.X64] <font face="Arial"><b>DXE</b></font></span></p></td>
+		
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugAgentLib</span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DxeDebugAgentLib.inf</span></p></td>
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >[LibraryClasess.X64.DXE_SMM] <font face="Arial"><b>SMM</b></font></span></p></td>
+		
+	</tr>
+	<tr> 
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >DebugAgentLib</span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >SmmDebugAgentLib.inf</span></p></td>
+	</tr>
+
+</table
+
+@snapend
 
 Note:
 
