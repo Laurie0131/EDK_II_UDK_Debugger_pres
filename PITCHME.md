@@ -411,7 +411,10 @@ DebugAgentLib<br>
 <p style="line-height:30%" align="left"><span style="font-size:0.5em"><br><br><br><br><br><br>
 <br>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">@size[4.5em](&lbrace;)</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">@size[4.5em](&lbrace;)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+@size[4.5em](&rbrace;)
+</font><br>
 <br>
 <br>
 </span></p>
