@@ -612,6 +612,10 @@ Note:
 
 Note:
 
+
+
+
+
 ---?image=/assets/images/slides2/Slide30.JPG
 @title[Debugging the Boot Phases]
 <p align="center"><span class="gold" ><b>Debugging the Boot Phases</b></span></p>
@@ -645,6 +649,42 @@ Note:
 
 
 Note:
+
+
+---?image=/assets/images/slides2/Slide30.JPG
+@title[Debugging the Boot Phases]
+<p align="center"><span class="gold" ><b>Debugging the Boot Phases</b></span></p>
+@snap[north-west span-20 fragment]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug gp-bullet-magenta]</span></p>
+@snapend
+
+
+@snap[north-west span-35 fragment]
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug gp-bullet-cyan]</span></p>
+@snapend
+
+@snap[north span-20 fragment]
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug gp-bullet-yello]</span></p>
+@snapend
+
+
+@snap[north span-35 fragment]
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug gp-bullet-blue]</span></p>
+@snapend
+
+
 ---?image=/assets/images/slides/Slide43.JPG
 <!-- .slide: data-transition="none" -->
 @title[Debugging the Boot Phases]
