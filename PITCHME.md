@@ -407,7 +407,7 @@ Note:
 		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " >SmmDebugAgentLib.inf</span></p></td>
 	</tr>
 
-</table
+</table>
 
 @snapend
 
