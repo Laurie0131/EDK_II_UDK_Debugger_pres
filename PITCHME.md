@@ -292,7 +292,7 @@ Note:
 </span></p>
 @snapend
 
-@snap[north span-30  ]
+@snap[north span-30  fragment]
 <br>
 <br>
 
@@ -304,7 +304,7 @@ Note:
 </span></p>
 @snapend
 
-@snap[north-east span-30 ]
+@snap[north-east span-30 fragment]
 <br>
 <br>
 
