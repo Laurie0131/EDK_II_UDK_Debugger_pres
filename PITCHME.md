@@ -1403,7 +1403,7 @@ Note:
 <br>
 <p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
 
-@snap[north-west span-30]
+@snap[north-west span-35]
 <br>
 <br>
 <br>
@@ -1435,7 +1435,7 @@ Note:
 </span></p>
 @snapend
 
-@snap[north-east span-60 fragment]
+@snap[north-east span-55 fragment]
 <br>
 <br>
 <br>
@@ -1445,7 +1445,7 @@ Note:
 &nbsp;<br>
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;<br><br><br><br>
+&nbsp;<br><br><br><br><br><br>
 <font color="black">@size[.5em](`0 e fffd2459 [l:\lr\mdemodulekg\core\pei\dispatcher\dispatch `)</font><br>
 <br>
 </span></p>
