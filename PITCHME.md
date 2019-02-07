@@ -669,6 +669,13 @@ Note:
 <span style="font-size:0.8em" ></span>
 </div>
 
+@snap[south-west span-100 fragment ]
+<p style="line-height:70%" align="left"><span style="font-size:0.90em;  " >
+@size[8em](@color[red](X))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color[yellow](<b>SORRY</b>) - Requires a hardware debugger
+</span></p>
+<br>
+<br>
+@snapend
 
 Note:
 
