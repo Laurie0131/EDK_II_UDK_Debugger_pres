@@ -403,14 +403,15 @@ DebugAgentLib<br>
 @snapend
 
 
-@snap[north-east span-65  fragment]
+@snap[north-east span-60  fragment]
 <p style="line-height:70%" align="center"><span style="font-size:0.8em"><br><br>
 <br>
 &nbsp;
 </span></p>
 <p style="line-height:60%" align="left"><span style="font-size:0.8em"><br>
 <br>
-<font color="#FFC000">@size[2.5em](&lbrace;)</font><br>
+<br>
+<font color="#FF00FF">@size[2.5em](&lbrace;)</font><br>
 <br>
 <br>
 </span></p>
@@ -422,11 +423,11 @@ DebugAgentLib<br>
 <br>
 &nbsp;
 </span></p>
-<p style="line-height:60%" align="left"><span style="font-size:0.75em"><br>
+<p style="line-height:60%" align="left"><span style="font-size:0.5em"><br>
 <br>
-COM1&nbsp;&nbsp;</font><br>
-&nbsp;&nbsp;OR<br>
-USB&nbsp;&nbsp;<br>
+&nbsp;&nbsp;COM1&nbsp;&nbsp;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;OR<br>
+&nbsp;&nbsp;USB&nbsp;&nbsp;<br>
 </span></p>
 @snapend
 
