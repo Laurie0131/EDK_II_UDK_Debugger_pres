@@ -284,7 +284,7 @@ Note:
 <br>
 
 <p style="line-height:60%" align="left"><span style="font-size:0.7em"><br>
-@size[1.2em](<font color="lt_green2"><b>Serial Null Modem</b></font>)<br>
+@size[1.2em](<font color="#A8ff60"><b>Serial Null Modem</b></font>)<br>
 <br><br><br><br><br><br><br>
 &bull;&nbsp;&nbsp;@size[.85em](Target must support standard RS-232 COM port)<br>
 &bull;&nbsp;&nbsp;@size[.85em](Host can support standard RS-232 or USB COM port)<br>
@@ -297,7 +297,7 @@ Note:
 <br>
 
 <p style="line-height:60%" align="left"><span style="font-size:0.7em"><br>
-@size[1.2em](<font color="lt_green2"><b>&nbsp;&nbsp;USB 2.0 Debug</b></font>)<br>
+@size[1.2em](<font color="#A8ff60"><b>&nbsp;&nbsp;USB 2.0 Debug</b></font>)<br>
 <br><br><br><br><br><br><br>
 &bull;&nbsp;&nbsp;@size[.85em](EHCI debug descriptor &lpar;using NET20DC adapter or AMI Debug Rx device&rpar;)<br>
 &bull;&nbsp;&nbsp;@size[.85em](Target must support USB 2.0 EHCI debug port)<br>
@@ -309,7 +309,7 @@ Note:
 <br>
 
 <p style="line-height:60%" align="left"><span style="font-size:0.7em"><br>
-@size[1.2em](<font color="lt_green2"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USB 3.0</b></font>)<br>
+@size[1.2em](<font color="#A8ff60"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USB 3.0</b></font>)<br>
 <br><br><br><br><br><br><br>
 &nbsp;&nbsp;&bull;&nbsp;&nbsp;@size[.85em](Added Release 1.5)<br>
 </span></p>
