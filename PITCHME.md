@@ -357,12 +357,11 @@ Note:
 @title[Updates to DSC]
 <p align="right"><span class="gold" ><b>Updates to DSC</b></span></p>
 
-@snap[north-west span-100 ]
+@snap[north-west span-50 ]
 <br>
 <p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
-<b>Libraries</b>
+<b>Libraries</b><br>
 &nbsp;</font></span></p>
-<br>
 <p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
 [LibraryClasess]  <font face="Arial"><b>General</b></font><br>&nbsp;&nbsp;
 PeCoffExtraActionLib<br>&nbsp;&nbsp;
@@ -384,27 +383,25 @@ DebugAgentLib<br>
 
 
 
-@snap[north-east span-50 ]
+@snap[north-east span-45 ]
 <br>
 <p style="line-height:70%" align="center"><span style="font-size:0.8em"><font color="#A8ff60"><br><br>
 <b>`SourceLevelDebugPkg`<br>Lib Instance</b>
 &nbsp;
 </font></span></p>
-<br>
 <p style="line-height:60%" align="left"><span style="font-size:0.460em; font-family:Consolas; " >
-<br>&nbsp;&nbsp;
-PeCoffExtraActionLibDebug.inf<br>&nbsp;&nbsp;
+PeCoffExtraActionLibDebug.inf<br>
 DebugCommunicationLib<br>
 DebugCommunicationLibSerialPort.inf <br>
                      or<br>
 DebugCommunicationLibUsb.inf<br>
-<br>&nbsp;&nbsp;
+<br>
 SecPeiDebugAgentLib.inf<br>
 <br>
-<br>&nbsp;&nbsp;
+<br>
 DxeDebugAgentLib.inf<br>
 <br>
-<br>&nbsp;&nbsp;
+<br>
 SmmDebugAgentLib.inf
 </span></p>
 @snapend
