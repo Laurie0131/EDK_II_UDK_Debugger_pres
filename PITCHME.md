@@ -1397,12 +1397,52 @@ Note:
 - can only set a breakpoint if current IP is within that module check by stepping...
 
 
----?image=/assets/images/slides/Slide83.JPG
+---?image=/assets/images/slides2/Slide57.JPG
 <!-- .slide: data-transition="none" -->
 @title[Set a Break Point from the Call Stack]
 <br>
 <p align="center"><span class="gold" ><b>Set a Break Point from the Call Stack</b></span></p>
 <br>
+@snap[north-west span-30]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.60em; " >
+&bull;&nbsp;Click on desired location in the Call Stack<br>
+&bull;&nbsp;Select w/ Cntl-C (copy)<br>
+&bull;&nbsp;Alt+F9 - Breakpoints menu<br>
+&bull;&nbsp;Add "bp" command <br>
+&bull;&nbsp;And Cntl-v to (paste) from Call Stack reference <br>
+&bull;&nbsp;Click "OK"<br>
+</span></p>
+@snapend
+
+@snap[north-west span-30 fragment]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.60em; " >
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+<br>
+<br>
+&bull;&nbsp;Press "F5" to GO
+</span></p>
+@snapend
+
+@snap[north-east span-30 fragment]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.60em; " >
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+@size[.7em](`0 e fffd2459 [l:\lr\mdemodulekg\core\pei\dispatcher\dispatch `)<br>
+<br>
+&bull;&nbsp;Press "F5" to GO
+</span></p>
+@snapend
 
 Note:
 
