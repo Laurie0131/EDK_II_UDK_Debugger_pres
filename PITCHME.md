@@ -657,7 +657,9 @@ Note:
 @snap[north-west span-20 fragment]
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug gp-bullet-magenta]</span></p>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug fa-2x gp-bullet-magenta]</span></p>
 @snapend
 
 
@@ -665,23 +667,30 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug gp-bullet-cyan]</span></p>
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug fa-2x gp-bullet-cyan]</span></p>
 @snapend
 
-@snap[north span-20 fragment]
+@snap[north span-40 fragment]
 <br>
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug gp-bullet-yello]</span></p>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >@fa[bug fa-2x gp-bullet-yellow]</span></p>
 @snapend
 
 
-@snap[north span-35 fragment]
+@snap[north span-40 fragment]
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug gp-bullet-blue]</span></p>
+<p style="line-height:60%" align="left"><span style="font-size:02.em" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@fa[bug fa-2x gp-bullet-blue]</span></p>
 @snapend
 
 
