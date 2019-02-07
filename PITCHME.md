@@ -279,36 +279,36 @@ Note:
 @title[Debug Cable Options]
 <p align="right"><span class="gold" ><b>Debug Cable Options</b></span></p>
 
-@snap[north-west span-35  ]
+@snap[north-west span-30  ]
 <br>
 <br>
 <p style="line-height:70%" align="left"><span style="font-size:0.7em">
 @size[1.2em](<font color=##87E2A9><b>Serial Null Modem</b></font>)<br>
-<br><br><br><br><br><br>
-&bull;Target must support standard RS-232 COM port<br>
-&bull;Host can support standard RS-232 or USB COM port<br>
-&bull;Supported by Windows & Linux<br>
+<br><br><br><br><br><br><br><br>
+&bull;&nbsp;&nbsp;@size[.9em](Target must support standard RS-232 COM port)<br>
+&bull;&nbsp;&nbsp;@size[.9em](Host can support standard RS-232 or USB COM port)<br>
+&bull;&nbsp;&nbsp;@size[.9em](Supported by Windows & Linux)<br>
 </span></p>
 @snapend
 
-@snap[north span-35  ]
+@snap[north span-30  ]
 <br>
 <br>
 <p style="line-height:70%" align="left"><span style="font-size:0.7em">
-@size[1.2em](<font color=##87E2A9><b>USB 2.0 Debug</b></font>)<br>
-<br><br><br><br><br><br>
-&bull;EHCI debug descriptor &lpar;using NET20DC adapter or AMI Debug Rx device&rpar;<br>
-&bull;Target must support USB 2.0 EHCI debug port<br>
+@size[1.2em](<font color=##87E2A9><b>&nbsp;&nbsp;USB 2.0 Debug</b></font>)<br>
+<br><br><br><br><br><br><br><br>
+&bull;&nbsp;&nbsp;@size[.9em](EHCI debug descriptor &lpar;using NET20DC adapter or AMI Debug Rx device&rpar;)<br>
+&bull;&nbsp;&nbsp;@size[.9em](Target must support USB 2.0 EHCI debug port)<br>
 </span></p>
 @snapend
 
-@snap[north-east span-35  ]
+@snap[north-east span-30 ]
 <br>
 <br>
 <p style="line-height:70%" align="left"><span style="font-size:0.7em">
 @size[1.2em](<font color=##87E2A9><b>&nbsp;&nbsp;&nbsp;&nbsp;USB 3.0</b></font>)<br>
-<br><br><br><br><br><br>
-&bull;Added Release 1.5<br>
+<br><br><br><br><br><br><br><br>
+&bull;&nbsp;&nbsp;@size[.9em](Added Release 1.5)<br>
 </span></p>
 @snapend
 
