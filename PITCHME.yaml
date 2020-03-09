@@ -14,5 +14,5 @@ background-opacity : 15
 transition : fade
 published : yes
 # footnote : "GitPitch [ Black Binary ] Presentation Template"
-footnote: "<a style='text-decoration:none; color: #e49436;' href='http://www.tianocore.org'>www.tianocore.org</a> NOTE: This tool is EOL Replacement <a style='text-decoration:none; color: #e49436;' href='https://software.intel.com/en-us/system-studio/choose-download'>link</a>
+footnote: "NOTE: this tool EOL Replaced by <a style='text-decoration:none; color: #e49436;' href='https://software.intel.com/en-us/system-studio/choose-download'>Intel System Studio</a> "
 vertical-center : false
