@@ -119,10 +119,10 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide8.JPG
+---
 @title[Distribution ]
 <p align="center"><span class="gold" ><b>Distribution </b></span></p>
-<span style="font-size:0.8em" > Download  application : <a href="http:/firmware.intel.com ">http:/firmware.intel.com  </a>&nbsp;-&nbsp; <a href="http://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop">Develop - Tools</a></span>
+<span style="font-size:0.8em" > Tool EOL replaced by Replaced by <a href="https://software.intel.com/en-us/system-studio/choose-download">Intel System Studio</a> 
 <br>
 <br>
 <br>
@@ -227,7 +227,9 @@ Note:
 ---?image=/assets/images/slides/Slide13.JPG
 @title[Install UDK Debugger - Linux ]
 <p align="right"><span class="gold" ><b>Install UDK Debugger - Linux</b></span></p>
-<span style="font-size:0.9em" >Download the Linux tool from : <a href="http://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop">http://firmware.intel.com</a></span>
+<span style="font-size:0.75em" >Please be aware that this tool has been EOL<br>
+The replacement is the <a href="https://software.intel.com/en-us/system-studio/choose-download">Intel System Studio Debugger</a>
+</span>
 <br>
 <div class="left1">
 <span style="font-size:0.7em" > Extract the .zip file to a temp directory</span>
