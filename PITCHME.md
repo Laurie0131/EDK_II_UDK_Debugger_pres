@@ -4,6 +4,9 @@
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
 #### EDK II UDK Debugger
+<span style="font-size:0.75em" >Please be aware that this tool has been EOL<br>
+The replacement is the <a href="https://software.intel.com/en-us/system-studio/choose-download">Intel System Studio Debugger</a>
+</span>
 
 <br>
 <span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
